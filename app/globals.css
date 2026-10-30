@@ -2,25 +2,89 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #2a1c12;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  --color-forest-950: #16261d;
+  --color-forest-800: #1f3a2d;
+  --color-pine-600: #2f5d46;
+  --color-moss-400: #7e9b7c;
+  --color-bark-800: #3a2618;
+  --color-bark-600: #5c3d2e;
+  --color-caramel-700: #8a5f33; /* small text on white (AA) */
+  --color-caramel-500: #b08150;
+  --color-caramel-300: #e0b98a; /* small text on forest (AA) */
+  --color-stone-50: #f7f3ec;
+  --color-stone-200: #e8dfd1;
+
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-fraunces);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: var(--color-pine-600);
+  color: #ffffff;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--color-caramel-500);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Marquee track renders the testimonial list twice back to back and scrolls
+ * exactly one set's width, so the loop point is invisible. */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 45s linear infinite;
+}
+
+@keyframes cta-zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.animate-cta-zoom {
+  animation: cta-zoom 20s ease-in-out infinite alternate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-marquee,
+  .animate-cta-zoom,
+  .animate-bounce {
+    animation: none !important;
+  }
 }
