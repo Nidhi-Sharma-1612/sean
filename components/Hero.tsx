@@ -17,7 +17,7 @@ export default function Hero() {
   const photoY = useTransform(scrollYProgress, [0, 1], ["0%", "12%"]);
 
   return (
-    <section id="top" className="relative z-10">
+    <section className="relative z-10">
       <div ref={ref} className="relative flex min-h-[68dvh] items-center lg:min-h-[86dvh] overflow-hidden bg-forest-950">
         <motion.div className="absolute inset-y-[-8%] inset-x-0" style={{ y: photoY }}>
           <motion.div

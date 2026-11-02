@@ -1,11 +1,13 @@
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowRight, ArrowUp, Mail, MapPin } from "lucide-react";
 import { cabins } from "@/lib/data/cabins";
-import { BOOKING_ORIGIN, bookingUrl, navLinks, site } from "@/lib/site";
+import { cabinUrl } from "@/lib/search";
+import { navLinks, site } from "@/lib/site";
 
 const legalLinks = [
-  { href: `${BOOKING_ORIGIN}/en/privacy-policy`, label: "Privacy Policy" },
-  { href: `${BOOKING_ORIGIN}/en/terms`, label: "Terms" },
+  { href: "/privacy", label: "Privacy Policy" },
+  { href: "/terms", label: "Terms" },
 ];
 
 const heading = "text-xs font-semibold uppercase tracking-wider text-caramel-300";
@@ -24,7 +26,7 @@ export default function Footer() {
       <div className="bg-forest-800">
         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-x-6 gap-y-12 px-6 pb-14 pt-10 lg:grid-cols-[2fr_1.4fr_1fr_1.5fr] lg:gap-x-12">
           <div className="col-span-2 lg:col-span-1">
-            <a href="#top" aria-label={`${site.name} home`} className="inline-block">
+            <Link href="/" aria-label={`${site.name} home`} className="inline-block">
               <Image
                 src="/images/logo.jpg"
                 alt=""
@@ -32,15 +34,15 @@ export default function Footer() {
                 height={324}
                 className="h-20 w-auto rounded-xl bg-white p-1"
               />
-            </a>
+            </Link>
             <p className="mt-4 max-w-xs font-serif text-lg italic text-white/90">{site.tagline}.</p>
-            <a
-              href={bookingUrl()}
+            <Link
+              href="/cabins"
               className="group mt-6 inline-flex items-center gap-2 rounded-full bg-caramel-300 px-6 py-3 text-sm font-semibold text-bark-800 transition-colors hover:bg-white"
             >
               Book Your Stay
               <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
-            </a>
+            </Link>
           </div>
 
           <nav aria-label="Our cabins">
@@ -48,12 +50,12 @@ export default function Footer() {
             <ul className="mt-4 space-y-3">
               {cabins.map((cabin) => (
                 <li key={cabin.id}>
-                  <a href={bookingUrl({ cabinId: cabin.id })} className="group block">
+                  <Link href={cabinUrl(cabin.slug)} className="group block">
                     <span className="block text-sm font-medium transition-colors group-hover:text-caramel-300">
                       {cabin.name}
                     </span>
                     <span className="block text-xs text-white/70">{cabin.town}, TN</span>
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -64,9 +66,9 @@ export default function Footer() {
             <ul className="mt-4 space-y-2.5 text-sm">
               {navLinks.map((link) => (
                 <li key={link.href}>
-                  <a href={link.href} className="text-white/85 transition-colors hover:text-caramel-300">
+                  <Link href={link.href} className="text-white/85 transition-colors hover:text-caramel-300">
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -112,9 +114,9 @@ export default function Footer() {
                 &copy; {new Date().getFullYear()} {site.name}
               </p>
               {legalLinks.map((link) => (
-                <a key={link.href} href={link.href} className="transition-colors hover:text-caramel-300">
+                <Link key={link.href} href={link.href} className="transition-colors hover:text-caramel-300">
                   {link.label}
-                </a>
+                </Link>
               ))}
             </div>
 

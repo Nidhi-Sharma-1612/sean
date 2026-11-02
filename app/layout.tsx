@@ -21,7 +21,10 @@ const fraunces = Fraunces({
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
-  title: "GSM Cabin Rentals | Smoky Mountain Cabins in Gatlinburg, Pigeon Forge & Sevierville",
+  title: {
+    default: "GSM Cabin Rentals | Smoky Mountain Cabins in Gatlinburg, Pigeon Forge & Sevierville",
+    template: "%s | GSM Cabin Rentals",
+  },
   description: site.description,
   openGraph: {
     title: "GSM Cabin Rentals | Smoky Mountain Cabins",
@@ -37,12 +40,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
+      data-scroll-behavior="smooth"
       className={`${inter.variable} ${fraunces.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-white font-sans text-bark-800">
         <MotionProvider>
           <Navbar />
-          <main className="flex-1">{children}</main>
+          <main id="top" className="flex-1">{children}</main>
           <Footer />
         </MotionProvider>
       </body>

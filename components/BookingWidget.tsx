@@ -14,12 +14,14 @@ import {
   Users,
   type LucideIcon,
 } from "lucide-react";
+import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useRef, useState, type FormEvent } from "react";
 import DateRangeCalendar from "@/components/DateRangeCalendar";
 import { canCheckIn, canStay, type AvailabilityResponse, type CabinCalendar } from "@/lib/availability";
-import { cabins, maxGuests } from "@/lib/data/cabins";
-import { formatDisplayDate, isAfter, toISODate } from "@/lib/date";
-import { bookingUrl } from "@/lib/site";
+import { cabins, findCabin, maxGuests } from "@/lib/data/cabins";
+import { formatDisplayDate, isAfter, parseISODate, toISODate } from "@/lib/date";
+import { cabinsUrl, type StaySearch } from "@/lib/search";
+import { useAvailability } from "@/lib/useAvailability";
 
 type Panel = "dates" | "cabin" | "guests";
 
@@ -72,13 +74,14 @@ function Field({
   );
 }
 
-export default function BookingWidget() {
-  const [checkIn, setCheckIn] = useState<Date | null>(null);
-  const [checkOut, setCheckOut] = useState<Date | null>(null);
-  const [guests, setGuests] = useState(2);
-  const [cabinId, setCabinId] = useState("");
+export default function BookingWidget({ initial = {} }: { initial?: StaySearch }) {
+  const router = useRouter();
+  const [checkIn, setCheckIn] = useState(() => parseISODate(initial.checkIn ?? ""));
+  const [checkOut, setCheckOut] = useState(() => parseISODate(initial.checkOut ?? ""));
+  const [guests, setGuests] = useState(initial.guests ?? 2);
+  const [cabinId, setCabinId] = useState(() => findCabin(initial.cabin)?.id ?? "");
   const [panel, setPanel] = useState<Panel | null>(null);
-  const [availability, setAvailability] = useState<AvailabilityResponse | "loading">("loading");
+  const availability = useAvailability();
   const [datesCleared, setDatesCleared] = useState(false);
 
   const widgetRef = useRef<HTMLFormElement>(null);
@@ -91,22 +94,6 @@ export default function BookingWidget() {
     () => calendarsFor(availability, cabinId, guests),
     [availability, cabinId, guests],
   );
-
-  useEffect(() => {
-    const controller = new AbortController();
-
-    fetch("/api/availability", { signal: controller.signal })
-      .then((res) => res.json() as Promise<AvailabilityResponse>)
-      .then(setAvailability)
-      .catch((error: unknown) => {
-        if (!controller.signal.aborted) {
-          console.error(error);
-          setAvailability({ status: "error" });
-        }
-      });
-
-    return () => controller.abort();
-  }, []);
 
   useEffect(() => {
     if (!panel) return;
@@ -193,9 +180,10 @@ export default function BookingWidget() {
       return;
     }
 
-    window.location.assign(
-      bookingUrl({
-        cabinId: cabinId || undefined,
+    setPanel(null);
+    router.push(
+      cabinsUrl({
+        cabin: selectedCabin?.slug,
         checkIn: checkIn ? toISODate(checkIn) : undefined,
         checkOut: checkOut ? toISODate(checkOut) : undefined,
         guests,
@@ -356,11 +344,11 @@ export default function BookingWidget() {
 }
 
 function calendarsFor(
-  availability: AvailabilityResponse | "loading",
+  availability: AvailabilityResponse | null,
   cabinId: string,
   guests: number,
 ): CabinCalendar[] | null {
-  if (availability === "loading" || availability.status !== "live") return null;
+  if (availability?.status !== "live") return null;
 
   const { cabins: live } = availability;
   const eligible = cabinId

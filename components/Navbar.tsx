@@ -1,10 +1,12 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
-import { bookingUrl, navLinks, site } from "@/lib/site";
+import { navLinks, site } from "@/lib/site";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -19,7 +21,10 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const overHero = !scrolled && !open;
+  const pathname = usePathname();
+
+  // Only the homepage has a full-bleed hero to show through the bar.
+  const overHero = pathname === "/" && !scrolled && !open;
 
   return (
     <header
@@ -34,7 +39,7 @@ export default function Navbar() {
           overHero ? "h-24" : "h-20",
         ].join(" ")}
       >
-        <a href="#top" aria-label={`${site.name} home`} onClick={() => setOpen(false)}>
+        <Link href="/" aria-label={`${site.name} home`} onClick={() => setOpen(false)}>
           {/* The logo artwork has a white background, so it sits on a white tile over the hero. */}
           <Image
             src="/images/logo.jpg"
@@ -47,11 +52,11 @@ export default function Navbar() {
               overHero ? "h-18 p-1 shadow-lg" : "h-14",
             ].join(" ")}
           />
-        </a>
+        </Link>
 
         <nav aria-label="Main" className="hidden items-center gap-9 md:flex">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               className={[
@@ -62,17 +67,17 @@ export default function Navbar() {
               ].join(" ")}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
         <div className="hidden md:block">
-          <a
-            href={bookingUrl()}
+          <Link
+            href="/cabins"
             className="inline-flex items-center rounded-full bg-pine-600 px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-forest-800"
           >
             Book Now
-          </a>
+          </Link>
         </div>
 
         <button
@@ -98,21 +103,22 @@ export default function Navbar() {
           >
             <div className="flex flex-col gap-4 px-6 py-5">
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.href}
                   href={link.href}
                   className="text-base font-medium text-bark-600"
                   onClick={() => setOpen(false)}
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
-              <a
-                href={bookingUrl()}
+              <Link
+                href="/cabins"
                 className="inline-flex items-center justify-center rounded-full bg-pine-600 px-6 py-3 text-sm font-semibold text-white"
+                onClick={() => setOpen(false)}
               >
                 Book Now
-              </a>
+              </Link>
             </div>
           </motion.nav>
         )}

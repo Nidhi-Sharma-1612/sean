@@ -1,11 +1,12 @@
 "use client";
 
+import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowRight, FerrisWheel, MapPin, ShoppingBasket, TreePine, type LucideIcon } from "lucide-react";
 import { useState } from "react";
 import { cabins } from "@/lib/data/cabins";
 import { nearbyPlaces, type NearbyKind } from "@/lib/data/nearby";
-import { bookingUrl } from "@/lib/site";
+import { cabinUrl } from "@/lib/search";
 
 const icons: Record<NearbyKind, LucideIcon> = {
   attraction: FerrisWheel,
@@ -75,13 +76,13 @@ export default function NearbyPlanner() {
 
         <div className="mt-auto flex flex-wrap items-center justify-between gap-3 pt-5">
           <p className="text-xs text-bark-600">Approximate, from {cabin.name}.</p>
-          <a
-            href={bookingUrl({ cabinId: cabin.id })}
+          <Link
+            href={cabinUrl(cabin.slug)}
             className="group inline-flex items-center gap-1.5 text-sm font-semibold text-pine-600 transition-colors hover:text-forest-800"
           >
-            Check dates at {cabin.name}
+            View {cabin.name}
             <ArrowRight size={15} className="transition-transform group-hover:translate-x-0.5" />
-          </a>
+          </Link>
         </div>
       </div>
     </div>

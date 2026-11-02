@@ -1,0 +1,1310 @@
+{
+ "bluff-ridge-haven": {
+  "beds": 8,
+  "checkIn": "16:00",
+  "checkOut": "10:00",
+  "about": [
+   "Bluff Ridge Haven, a brand-new luxury cabin in the Great Smoky Mountains, where modern comfort meets rustic charm. This serene retreat sleeps 12 guests in five beautifully designed bedrooms, including a fun bunk room for kids. Enjoy stunning tree-lined and distant mountain views, a cozy electric fireplace, and a fully stocked gourmet kitchen with quartz countertops, stainless steel appliances, and extras like an air fryer and Nespresso machine. Whether relaxing on the deck, enjoying the indoor heated pool, or exploring nearby attractions, this cabin has everything you need for an unforgettable stay.",
+   "Step inside to vaulted wood ceilings, plush leather seating, and a spacious open-concept layout. The main-level master suite features a king bed, smart TV, writing desk, and en-suite bathroom with a huge  walk-in shower. Upstairs, two bedrooms have en-suite bathrooms with shower/tub combos, while a third bedroom offers extra seating. The kid-friendly bunk room is the fourth bedroom upstairs, and includes a built-in bunk bed with four twin beds, a rock climbing wall, fireman’s pole, saucer swing, smart TV, and soft foam flooring for safety.",
+   "Entertainment abounds with a game room featuring a basketball arcade game, foosball, Pac-Man, Star Wars pinball, and large smart TV with a gaming console. Large sliding doors lead to the indoor pool room, complete with an “social media”  Smoky Mountain mural, basketball hoop, giant Connect 4 game, and ample seating. There are multiple safety devices, alarms, and self closing gates to keep the pool area self, but adult supervision is mandatory. The pool is heated to around  80f, and is professionally serviced prior to each new guest. The pool is 5.5’ x 15' and 4’ deep (absolutely no diving into the pool). A full bathroom with a walk-in shower is located in the pool room.",
+   "Three decks provide outdoor relaxation, with rocking chairs, a cornhole game, a BBQ grill, and a six-person hot tub. The lower deck offers easy access to the fire pit for cozy evenings under the stars.",
+   "Minutes from Great Smoky Mountains National Park, Pigeon Forge, and Gatlinburg, Bluff Ridge Haven is perfect for nature lovers and adventure seekers. Whether soaking in the hot tub, playing in the game room, or enjoying a peaceful morning coffee, this luxury cabin is the ultimate mountain getaway. Book your stay today!"
+  ],
+  "gettingThere": "Bluff Ridge Haven is 15 minutes from Pigeon Forge, 20 minutes to downtown Sevierville, and 40 minutes to Gatlinburg.  You will find a good selection of restaurants, grocery stores and shopping within 10 minutes from the house.",
+  "parking": "",
+  "notes": [
+   "Disclaimer: The host is not responsible for any lost, stolen, or forgotten items during your stay. Additionally, we cannot be held liable for power outages, storms, fires, or any other unforeseen events classified as acts of God. We encourage guests to take necessary precautions and travel insurance is recommended for added peace of mind.",
+   "Nature & Wildlife Notice: Our cabin is located in the Smoky Mountains, where encounters with wildlife are common. Bears and snakes are native to the area, so please be mindful of your surroundings and properly store food to avoid attracting animals. Additionally, at certain times of the year, you may notice ladybugs inside the cabin—this is normal for the region. While the home is professionally serviced by a pest control company, please remember that you are in the woods, and occasional bugs or insects may be present."
+  ],
+  "amenities": [
+   "Refrigerator",
+   "Cookware",
+   "Children’s dinnerware",
+   "Dryer",
+   "Essentials",
+   "Fire extinguisher",
+   "Bed linens",
+   "Garage",
+   "Iron",
+   "Bathtub",
+   "Coffee maker",
+   "Dishwasher",
+   "Stove",
+   "Washer",
+   "Heating",
+   "BBQ grill",
+   "Stair gates",
+   "Smoke detector",
+   "Hot water",
+   "Hot tub",
+   "Indoor fireplace",
+   "Pack ’n play/travel crib",
+   "Extra pillows and blankets",
+   "Laptop friendly workspace",
+   "Table corner guards",
+   "TV",
+   "Kitchen",
+   "Patio or balcony",
+   "Microwave",
+   "Oven",
+   "Game console",
+   "Hair dryer",
+   "Outlet covers",
+   "First aid kit",
+   "Fire Pit",
+   "Air conditioning",
+   "Hangers",
+   "Swimming pool",
+   "Dishes and silverware",
+   "Carbon monoxide detector",
+   "High chair",
+   "Garden or backyard",
+   "Wireless Internet",
+   "Suitable for children (2-12 years)",
+   "Suitable for infants (under 2 years)"
+  ],
+  "photos": [
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/4deb8c02-443d-4b-WoScD",
+    "alt": "Bluff Ridge Haven photo 1"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/eecab389-6547-42-NNT25",
+    "alt": "Bluff Ridge Haven photo 2"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/3563984c-9e58-4f-7Ylo4",
+    "alt": "Bluff Ridge Haven photo 3"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/be44a3b5-966a-49-kUBwZ",
+    "alt": "Bluff Ridge Haven photo 4"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/d7f32611-8f5f-48-vtPXB",
+    "alt": "Bluff Ridge Haven photo 5"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/5682f2cd-f408-40--EMgD",
+    "alt": "Bluff Ridge Haven photo 6"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/1b05d9c4-0a11-4e-3PrmZ",
+    "alt": "Bluff Ridge Haven photo 7"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/14595a67-322b-47-ephmt",
+    "alt": "Bluff Ridge Haven photo 8"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/337d06ff-4d8c-4c-ZGzHO",
+    "alt": "Bluff Ridge Haven photo 9"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/ca717a98-a637-4f-MYY7j",
+    "alt": "Bluff Ridge Haven photo 10"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/6c4a4c45-7a00-47-GENGr",
+    "alt": "Bluff Ridge Haven photo 11"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/e8caebcc-652b-4b-L0S4c",
+    "alt": "Bluff Ridge Haven photo 12"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/56856500-10ea-40-pqEIU",
+    "alt": "Bluff Ridge Haven photo 13"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/00fff3d1-ff84-44-AmsEq",
+    "alt": "Bluff Ridge Haven photo 14"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/44db36b5-fb87-40-aC08U",
+    "alt": "Bluff Ridge Haven photo 15"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/da69936d-898f-43-6jTjN",
+    "alt": "Bluff Ridge Haven photo 16"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/0992d311-a493-4a-BPR0H",
+    "alt": "Bluff Ridge Haven photo 17"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/67f7f5b1-2c2b-41-MIzdz",
+    "alt": "Bluff Ridge Haven photo 18"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/bbd42772-0f9c-47-zwUGK",
+    "alt": "Bluff Ridge Haven photo 19"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/e0326934-e305-49-uT_h0",
+    "alt": "Bluff Ridge Haven photo 20"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/31706076-c9ef-4e-ZrrN4",
+    "alt": "Bluff Ridge Haven photo 21"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/b4398eb8-f9b7-46-mhP2k",
+    "alt": "Bluff Ridge Haven photo 22"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/c53ea74a-0411-47-y7HIp",
+    "alt": "Bluff Ridge Haven photo 23"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/e74d27b8-2a1f-48-NrD4b",
+    "alt": "Bluff Ridge Haven photo 24"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/72dd9c29-b1b0-45-ZNiw1",
+    "alt": "Bluff Ridge Haven photo 25"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/3a8817e9-69d2-40-0P8Dv",
+    "alt": "Bluff Ridge Haven photo 26"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/2deccdef-13b5-4c-mx3kS",
+    "alt": "Bluff Ridge Haven photo 27"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/a24c8c62-30c7-44-mGush",
+    "alt": "Bluff Ridge Haven photo 28"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/4c356e99-4113-4a-nMzN4",
+    "alt": "Bluff Ridge Haven photo 29"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/ee59b6af-a7eb-48-BSIYD",
+    "alt": "Bluff Ridge Haven photo 30"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/e4199b23-a5e4-41-4aw9e",
+    "alt": "Bluff Ridge Haven photo 31"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/b51f5607-4bec-4e-1W0Tg",
+    "alt": "Bluff Ridge Haven photo 32"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/7b314dd8-398b-4f-tw-un",
+    "alt": "Bluff Ridge Haven photo 33"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/37e30d31-5a67-4f-xKyuQ",
+    "alt": "Bluff Ridge Haven photo 34"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/24396614-827a-44-vcFOh",
+    "alt": "Bluff Ridge Haven photo 35"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/abbf947c-48a8-4c-UWtFo",
+    "alt": "Bluff Ridge Haven photo 36"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/6485fe5e-41bc-4e-_uFqE",
+    "alt": "Bluff Ridge Haven photo 37"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/b40c0675-0e5c-45-EJV20",
+    "alt": "Bluff Ridge Haven photo 38"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/de02685f-2379-43-AilfU",
+    "alt": "Bluff Ridge Haven photo 39"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/e44a2bc0-4c8d-42-nEvpw",
+    "alt": "Bluff Ridge Haven photo 40"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/fc8ffa52-f6f1-4a-6V1Nz",
+    "alt": "Bluff Ridge Haven photo 41"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/d80a6a3a-8b86-43-UnwpA",
+    "alt": "Bluff Ridge Haven photo 42"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/d3179738-3dc2-44-n03rt",
+    "alt": "Bluff Ridge Haven photo 43"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/768ea85f-ab9b-42-ceROl",
+    "alt": "Bluff Ridge Haven photo 44"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/6ec44f38-e260-4e-3BJff",
+    "alt": "Bluff Ridge Haven photo 45"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/02b46406-c976-41-axiaq",
+    "alt": "Bluff Ridge Haven photo 46"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b3fe47f0015b6ba42/7dee469d-b312-42-ZpAgP",
+    "alt": "Bluff Ridge Haven photo 47"
+   }
+  ],
+  "rules": [
+   {
+    "level": 3,
+    "text": "Must be 25 years old to book"
+   },
+   {
+    "level": 3,
+    "text": "Must follow all rules in listing description"
+   },
+   {
+    "level": 0,
+    "text": "Additional Rules"
+   },
+   {
+    "level": 3,
+    "text": "By confirming your booking, you agree to adhere to the Rental Rules set forth in this listing."
+   },
+   {
+    "level": 3,
+    "text": "The rental agreement is as follows:"
+   },
+   {
+    "level": 0,
+    "text": "Rental Rules"
+   },
+   {
+    "level": 1,
+    "text": "1. Smoking is NOT allowed, and Drugs of any kind are NOT permitted"
+   },
+   {
+    "level": 1,
+    "text": "2. People other than those in the Guest party set forth in the on-line agreement may not stay overnight in the property. Any other person in the property is the sole responsibility of Guest. Guests are not allowed to exceed the occupancy limit agreed to in the on-line itinerary. No more than 12 persons (including infants) are allowed in the cabin at any time."
+   },
+   {
+    "level": 1,
+    "text": "3. Guests should not create excessive noise at a level that disturbs neighbors; Code- enforced neighborhood quiet hours are from 9:00p.m. – 8:00a.m. If you plan to party do not book this cabin. It is our home and you must treat it with respect."
+   },
+   {
+    "level": 1,
+    "text": "4. This cabin is privately owned; the owners are NOT responsible for any accidents, injuries or illness that occurs while on the premises or its facilities. The Homeowners are NOT responsible for the loss of personal belongings or valuables of the guest. By accepting this reservation, it is agreed that all guests are expressly assuming the risk of any harm arising from their use of the premises or others whom they invite to use the premise."
+   },
+   {
+    "level": 1,
+    "text": "5. Keep the property and all furnishings in good order, removing any items from the cabin including living and kitchen furnishings is not permitted."
+   },
+   {
+    "level": 1,
+    "text": "6. Only use appliances for their intended uses"
+   },
+   {
+    "level": 1,
+    "text": "7. Pets are NOT allowed."
+   },
+   {
+    "level": 1,
+    "text": "8. Parking is limited to 3 vehicle(s). Vehicles are to be parked in designated parking areas only. Parking on the road is not permitted. Any illegally parked cars are subject to towing; applicable fines/towing fees are the sole responsibility of the vehicle owner."
+   },
+   {
+    "level": 1,
+    "text": "9. Housekeeping: There is no daily housekeeping service. While linens and bath towels are included in the unit, daily maid service is not included in the rental rate. We do not permit towels or linens to be taken from the units. Check Out is at 10am. Before you leave, we ask that the items below be completed to help our housekeeper quickly prepare for the next guest. Please load all dishes into the dishwasher and run it on the normal cycle. Please remove and dispose of all items in the refrigerator, freezer, and cabinets. Leave all bedding on the bed, and put all towels in shower or tub."
+   },
+   {
+    "level": 1,
+    "text": "10. Please lock all doors and all windows upon departure. Please turn off all lights."
+   },
+   {
+    "level": 1,
+    "text": "11. Do not leave garbage outside or anywhere besides designated trash cans."
+   },
+   {
+    "level": 1,
+    "text": "12. Hot Tub: [No children under the age of 18 permitted in hot tubs at any time] [without adult supervision]. When using the hot tub, remember there is a certain health risk associated with this facility. Use at your own risk. Our housekeepers drain, sanitize, refill, and replenish chemicals in all tubs prior to your arrival; therefore, it may not be warm until later that evening. DO NOT STAND ON THE HOT TUB COVERS. Hot tub covers are for insulation purposes and are not designed to support a person or persons. They will break and you will be charged for replacement. Remember when not using the hot tub, leave cover on so hot tub will stay warm."
+   },
+   {
+    "level": 1,
+    "text": "13. Fireplace: Please do not throw any paper or other combustible materials in the fireplace."
+   },
+   {
+    "level": 1,
+    "text": "14. Water and Septic: The cabin has a septic system. The septic system is highly effective; however, it will clog up if improper material is flushed. DO NOT FLUSH anything other than toilet paper. No feminine products should be flushed at any time. If it is found that feminine products have been flushed and clog the septic system, you could be charged damages of up to $1,000."
+   },
+   {
+    "level": 1,
+    "text": "15. Storms: No refunds will be given for storms. [Mountain roads can be curvy and steep. We highly recommend a four-wheel drive vehicle during the snow months. We do not refund due to road conditions."
+   },
+   {
+    "level": 1,
+    "text": "16. Pool Rules: No diving into the pool, No running or rough play in or around pool, No children allowed in pool without proper supervision, Enter the pool only if you know how to properly swim, have an experienced swimmer to assist you, or have a flotation device such as a life vest, arm floats, or air cushion, Make sure another swimmer is either with you in the pool or is there supervising whenever you are in the water, Avoid going to the pool if you have the flu, open wounds, or warts, No animals or pets allowed in pool, No glass allowed in pool or on pool deck, The pool is not a toilet. Please use the bathroom, must adhere to all rules and warning on pool room wall! owner is not responsible for any injuries - USE AT YOUR OWN RISK! ** extra charges will apply if there is any sign of soap, chemicals, or bubbles added to the pool **"
+   },
+   {
+    "level": 1,
+    "text": "17.Any damage to any items in the cabin including couches, chairs, tables, TVs, pool table, hot tub, beds, sheets, towels, pillows, etc., are the responsibility of the renter. Every item will be looked at before arrival and after departure. If you cause damage, notify the owner immediately. We will find it and charge you regardless. It is our home. Treat it as if it were your own. Failure to comply with the above rules will result in non-return of security deposit and possible additional charges. Booking through Airbnb or vrbo assigns your consent to all listed under \"House Rules\""
+   }
+  ],
+  "policies": {
+   "pets": false,
+   "smoking": false,
+   "events": false
+  }
+ },
+ "pine-top-vista": {
+  "beds": 6,
+  "checkIn": "16:00",
+  "checkOut": "10:00",
+  "about": [
+   "Upon entering the front door, you walk into an open concept living room, dining area and kitchen with great views through the oversized windows. The dining table seats 6 and the nearby breakfast bar offers additional seating for 4. The fully equipped kitchen features granite countertops, stainless appliances, and a large selection of small appliances (including an air fryer),  and cooking supplies to have a wonderful cooking experience. Adjacent to the kitchen and dining area is the living room, featuring two plush leather couches, wall mounted 58” smart tv and a gorgeous stacked stone accented electric fireplace. Also, on the main level is bedroom #1 featuring a king bed, full bathroom with walk in shower, and private door to deck. The main level deck is where you will find the hot tub as well as 4 rocking chairs.",
+   "Downstairs features bedroom #2 with a queen bed and private access to the lower deck. A Jack & Jill bathroom with tub/shower connects to bedroom #3 featuring a king bed and access to deck as well. Across the hall is bedroom #4 with a king bed and a private en-suite bathroom with walk in shower. The lower level also has laundry room with brand large new washer and dryer.",
+   "The 3rd level is the game room. This large open room with oversized windows continues to give you the upscale rustic feel. There is a half bathroom, large pull out leather couch, beautiful fireplace, large wall mounted 58\" smart TV, and a triple bunk beds for the kids! While enjoying the incredible views you can choose from shuffleboard, giant connect four, pool, or air hockey. The upper level deck also has rocking chairs and is a great place to take in the sunset. If the weather is not cooperating you can stay indoors with the fireplace and play cards or board games. The game rooms TV also has a retro video game console!",
+   "The unique location of this .5-acre lot allows for usable outdoor space, for horseshoes or corn hole, which is rare in this mountain area. Parking at the cabin is great, there is ample level parking at the front door for up to four vehicles. All 3 decks span the width of the house and have amazing rocking chairs so you can take in the sights in comfort. The gas BBQ grill on the main deck will allow you to grill up a feast. Guests will be happy to know that the 4 person Jacuzzi is completely drained and cleaned prior to your arrival. The outdoor pools are typically open from Memorial Day weekend through Labor Day weekend. Cobbly Nob also has a pickleball court for guests to use!"
+  ],
+  "gettingThere": "Pine Top Vista is a 1.8 miles drive from the Cobbly Nob turn off from the Parkway (HWY 321). The roads are well maintained and should not be an issue for any car. There is a 500-foot elevation gain and some turns to get to the cabin after you drive through Bent Creek Golf Course. Like all homes in this area the drive may be considered steep and winding for some, but you should feel comfortable after the first drive. There is a local market and deli about 10 minutes away. You will find a large selection of restaurants, grocery stores and shopping within 20 minutes, with no need of going downtown. If you are heading to the Gatlinburg strip expect a 30-minute drive. A short 15-minute drive will get you into the Great Smokey Mountains National Park via the Greenbrier entrance. There are endless hiking trails, scenic drives, swimming spots, and water falls to see within the park. Be sure to check out the zipline at Climb Works, just 3 miles from the cabin. If amusement parks, dining, and shopping is more your speed, you can get to all that Pigeon Forge & Gatlinburg has to offer in less than 45 minutes. Upon booking with us, we will share a comprehensive list of activities and sights to see.",
+  "parking": "",
+  "notes": [
+   "Disclaimer: The host is not responsible for any lost, stolen, or forgotten items during your stay. Additionally, we cannot be held liable for power outages, storms, fires, or any other unforeseen events classified as acts of God. We encourage guests to take necessary precautions and travel insurance is recommended for added peace of mind.",
+   "Nature & Wildlife Notice: Our cabin is located in the Smoky Mountains, where encounters with wildlife are common. Bears and snakes are native to the area, so please be mindful of your surroundings and properly store food to avoid attracting animals. Additionally, at certain times of the year, you may notice ladybugs inside the cabin—this is normal for the region. While the home is professionally serviced by a pest control company, please remember that you are in the woods, and occasional bugs or insects may be present."
+  ],
+  "amenities": [
+   "Air conditioning",
+   "Extra pillows and blankets",
+   "Cookware",
+   "Stair gates",
+   "Pool table",
+   "Dining table",
+   "Game console",
+   "Hot tub",
+   "TV",
+   "Dryer",
+   "BBQ grill",
+   "Wireless Internet",
+   "Bathtub",
+   "Iron",
+   "Oven",
+   "Garden or backyard",
+   "Microwave",
+   "Baking sheet",
+   "Patio or balcony",
+   "Washer",
+   "Smoke detector",
+   "Resort access",
+   "Bed linens",
+   "Kitchen",
+   "High chair",
+   "Coffee maker",
+   "Barbeque utensils",
+   "Outdoor seating (furniture)",
+   "Freezer",
+   "Hangers",
+   "Fire extinguisher",
+   "Board games",
+   "Essentials",
+   "Garage",
+   "Ceiling fan",
+   "Refrigerator",
+   "Hair dryer",
+   "Pack ’n play/travel crib",
+   "First aid kit",
+   "Dishwasher",
+   "Dishes and silverware",
+   "Heating",
+   "Stove",
+   "Toaster",
+   "Wine glasses",
+   "Indoor fireplace",
+   "Fire Pit",
+   "Blender",
+   "Carbon monoxide detector",
+   "Hot water",
+   "Suitable for children (2-12 years)",
+   "Suitable for infants (under 2 years)"
+  ],
+  "photos": [
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/622072f2-f4eb-46-A1bSj",
+    "alt": "Pine Top Vista photo 1"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/db03b5e6-3d57-4e-7T6Ai",
+    "alt": "Pine Top Vista photo 2"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/703b7232-77b9-47-6hh8T",
+    "alt": "Pine Top Vista photo 3"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/6b791cdf-f423-45-Sgv3K",
+    "alt": "Pine Top Vista photo 4"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/55f754e9-d688-4b-A6tS7",
+    "alt": "Pine Top Vista photo 5"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/d7a9ab14-6aa4-4b-OP4up",
+    "alt": "Pine Top Vista photo 6"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/ba51568f-0408-4e-fcB7d",
+    "alt": "Pine Top Vista photo 7"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/468b90e9-fb68-41-G1gol",
+    "alt": "Pine Top Vista photo 8"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/ba74457e-d9a2-4c-5wTjm",
+    "alt": "Pine Top Vista photo 9"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/7c60cad9-f0a8-4d-MIWvg",
+    "alt": "Pine Top Vista photo 10"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/044e78d3-322f-4f-SqwX_",
+    "alt": "Pine Top Vista photo 11"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/3c38afc9-8eec-44-NzWnM",
+    "alt": "Pine Top Vista photo 12"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/41684d60-1125-44-l-MRL",
+    "alt": "Pine Top Vista photo 13"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/ede6df8c-2819-4a-r2Qsv",
+    "alt": "Pine Top Vista photo 14"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/042d7187-fbbe-49-TU0qf",
+    "alt": "Pine Top Vista photo 15"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/6b52981b-5c76-4a-Ka6JP",
+    "alt": "Pine Top Vista photo 16"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/47624e00-a58f-4e-i8UvI",
+    "alt": "Pine Top Vista photo 17"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/7f839ee0-d59d-43-jr0az",
+    "alt": "Pine Top Vista photo 18"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/58bdfe50-d2d5-4c-pcAu-",
+    "alt": "Pine Top Vista photo 19"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/cb4a16f7-60ca-4b-avk3A",
+    "alt": "Pine Top Vista photo 20"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/0889df5e-8b9f-43-OJCQi",
+    "alt": "Pine Top Vista photo 21"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/86003057-8372-42-wgxaC",
+    "alt": "Pine Top Vista photo 22"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/7e43f39f-74b2-4a-l-JVm",
+    "alt": "Pine Top Vista photo 23"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/64d3445d-c857-45-Ru2cn",
+    "alt": "Pine Top Vista photo 24"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/5fcca2ad-d1c6-44-mlxMt",
+    "alt": "Pine Top Vista photo 25"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/e35875d5-5e77-48-c0Gs3",
+    "alt": "Pine Top Vista photo 26"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/aa169838-f4d9-42-klWW6",
+    "alt": "Pine Top Vista photo 27"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/2deef514-9233-40-dViqw",
+    "alt": "Pine Top Vista photo 28"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/49dd441e-2a05-47-xAEpN",
+    "alt": "Pine Top Vista photo 29"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/1748f830-789e-49-sBNwe",
+    "alt": "Pine Top Vista photo 30"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/697554d5-11ae-44-1slTP",
+    "alt": "Pine Top Vista photo 31"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/87be90e7-d33e-49-MBxkv",
+    "alt": "Pine Top Vista photo 32"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/3047b755-ec84-4d-D_Dtp",
+    "alt": "Pine Top Vista photo 33"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/30bb08ba-b545-4b-Q9-2S",
+    "alt": "Pine Top Vista photo 34"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/c79bd3d5-2f12-43-JRmu5",
+    "alt": "Pine Top Vista photo 35"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/011d88f6-221b-49-5Yetk",
+    "alt": "Pine Top Vista photo 36"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/7b4be1da-f4ad-47-L_EXq",
+    "alt": "Pine Top Vista photo 37"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/3d378425-6b78-45-L7Ttr",
+    "alt": "Pine Top Vista photo 38"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/49629261-0088-4d-Da4w2",
+    "alt": "Pine Top Vista photo 39"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/a4a5dc93-1ba4-4b-P0wNz",
+    "alt": "Pine Top Vista photo 40"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/1568d520-1ec4-43-1oryC",
+    "alt": "Pine Top Vista photo 41"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/ea049041-b985-4e-eBrcK",
+    "alt": "Pine Top Vista photo 42"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/f81e9c80-16d4-4b-a8JAs",
+    "alt": "Pine Top Vista photo 43"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/1edbd0ef-e74b-47-qIb_o",
+    "alt": "Pine Top Vista photo 44"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/cfde9c65-4561-4c-7_pP3",
+    "alt": "Pine Top Vista photo 45"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/c7b162e2-bf09-4b-uJxcB",
+    "alt": "Pine Top Vista photo 46"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/a2e7f7f3-a45d-4c-YYsR9",
+    "alt": "Pine Top Vista photo 47"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/12c6c265-80e5-4b-KiL4f",
+    "alt": "Pine Top Vista photo 48"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/bb0588f3-dac2-4e-Wp6-1",
+    "alt": "Pine Top Vista photo 49"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/6104fe39-bd8f-4f-IQzLj",
+    "alt": "Pine Top Vista photo 50"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/6bccc1df-6942-4a-3hPHa",
+    "alt": "Pine Top Vista photo 51"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/3dc42ece-427c-42-vq6xP",
+    "alt": "Pine Top Vista photo 52"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5ba87237001523e3c4/a6eb58d9-89dd-4d-Fd7hp",
+    "alt": "Pine Top Vista photo 53"
+   }
+  ],
+  "rules": [
+   {
+    "level": 3,
+    "text": "The cabin – Rules, Policies, & Rental Agreement"
+   },
+   {
+    "level": 0,
+    "text": "House Rules"
+   },
+   {
+    "level": 1,
+    "text": "NO PETS"
+   },
+   {
+    "level": 2,
+    "text": "If a pet is found to be at the cabin, you will be charged a $250 cleaning fee and asked to leave"
+   },
+   {
+    "level": 1,
+    "text": "MAX 13 GUESTS"
+   },
+   {
+    "level": 2,
+    "text": "If you bring more people than agreed upon by your reservation you will be asked to leave without a refund"
+   },
+   {
+    "level": 1,
+    "text": "NO SMOKING"
+   },
+   {
+    "level": 2,
+    "text": "Please no smoking inside or on any decks"
+   },
+   {
+    "level": 2,
+    "text": "Please smoke on the street and dispose of cigarette butts properly"
+   },
+   {
+    "level": 2,
+    "text": "Smoking inside the cabin will result in a $250 cleaning fee"
+   },
+   {
+    "level": 1,
+    "text": "NO CANDLES or any open flames inside house or on decks"
+   },
+   {
+    "level": 1,
+    "text": "DO NOT FEED THE WILDLIFE!"
+   },
+   {
+    "level": 2,
+    "text": "There is bear activity in the neighborhood. The bears will not harm you if you do not bother them."
+   },
+   {
+    "level": 2,
+    "text": "DO NOT leave trash or food outside!"
+   },
+   {
+    "level": 2,
+    "text": "Lock front door when inside"
+   },
+   {
+    "level": 1,
+    "text": "No events, parties, or large gatherings"
+   },
+   {
+    "level": 1,
+    "text": "Read and understand “additional rules” and rental agreement below"
+   },
+   {
+    "level": 0,
+    "text": "General Policies"
+   },
+   {
+    "level": 1,
+    "text": "Must be at least 25 years old to book"
+   },
+   {
+    "level": 1,
+    "text": "4 night minimum, 28-day maximum stay"
+   },
+   {
+    "level": 1,
+    "text": "Soaps, shampoos, toiletries, condiments, zip locks, paper goods and coffee are NOT provided"
+   },
+   {
+    "level": 0,
+    "text": "Check In & Out"
+   },
+   {
+    "level": 1,
+    "text": "Check-in: 4:00 PM"
+   },
+   {
+    "level": 2,
+    "text": "Self check-in with keypad (key code will be emailed to you)"
+   },
+   {
+    "level": 1,
+    "text": "Checkout: 10:00 AM"
+   },
+   {
+    "level": 2,
+    "text": "This is to allow the cleaning crew to have ample time to clean for future guests. Failure to comply will result in a minimum $50 late fee and could be as much as a full day’s rate."
+   },
+   {
+    "level": 1,
+    "text": "Check-Out Instructions:"
+   },
+   {
+    "level": 2,
+    "text": "Place all towels in bathtub / shower"
+   },
+   {
+    "level": 2,
+    "text": "Leave all bedding on each bed"
+   },
+   {
+    "level": 2,
+    "text": "Load dishwasher use the dishwasher pod provided under the kitchen sink and start cycle. DO NOT OVERLOAD THE DISHWASHER!"
+   },
+   {
+    "level": 2,
+    "text": "Remove any food items in refrigerator/freezer and cabinets."
+   },
+   {
+    "level": 2,
+    "text": "Turn off all lights & lock all doors."
+   },
+   {
+    "level": 0,
+    "text": "Refunds"
+   },
+   {
+    "level": 1,
+    "text": "We do NOT offer refunds for weather, natural disasters, or power outages"
+   },
+   {
+    "level": 1,
+    "text": "100% refund 30 days prior to arrival"
+   },
+   {
+    "level": 1,
+    "text": "50% refund 2 weeks prior to arrival"
+   },
+   {
+    "level": 1,
+    "text": "0% refund if less than 2 weeks from arrival"
+   },
+   {
+    "level": 0,
+    "text": "Security deposit"
+   },
+   {
+    "level": 1,
+    "text": "$250 security deposit"
+   },
+   {
+    "level": 1,
+    "text": "No food or drinks on the pool table"
+   },
+   {
+    "level": 2,
+    "text": "Any damage to the pool table felt will result in a $350 fee"
+   },
+   {
+    "level": 1,
+    "text": "The cabin is inventoried upon guest check-out. Any items missing will be billed at cost, plus a $50 service fee"
+   },
+   {
+    "level": 1,
+    "text": "Any damage to the cabin itself will be assessed on a case by case basis"
+   },
+   {
+    "level": 1,
+    "text": "If any makeup stains are found on the pillows, sheets, blankets, or towels, you will be charged accordingly plus a $25 service fee"
+   },
+   {
+    "level": 0,
+    "text": "Hot Tub / Jacuzzi Rules"
+   },
+   {
+    "level": 1,
+    "text": "Our hot tub is drained, scrubbed, refilled with fresh water, and chemicals added between each guest. The hot tub should always be set no lower than 100 or more than 104 degrees."
+   },
+   {
+    "level": 2,
+    "text": "Depending on the time you check in and the time since water was replaced, the water may not be up to temperature yet. Please be patient."
+   },
+   {
+    "level": 1,
+    "text": "The hot tub is for guests 18 and over only (unless with parents’ consent AND SUPERVISION). Alcohol is not allowed near the hot tub. You are not allowed to use the hot tub if you have consumed alcohol or you are pregnant. Use the hot tub AT YOUR OWN RISK!"
+   },
+   {
+    "level": 1,
+    "text": "DO NOT STAND OR SIT ON HOT TUB COVER"
+   },
+   {
+    "level": 2,
+    "text": "You will be charged for any damage to the hot tub cover"
+   },
+   {
+    "level": 0,
+    "text": "Cleaning"
+   },
+   {
+    "level": 1,
+    "text": "Our cleaners are using an enhanced cleaning routine to ensure the property has been thoroughly disinfected prior to your arrival. Our cleaners are using an antibacterial cleaner on all frequently touched surfaces such as counter-tops, door handles, light switches, and other frequently touched surfaces."
+   },
+   {
+    "level": 1,
+    "text": "All towels and bedding are washed in hot water that’s at least 60ºC/140ºF"
+   },
+   {
+    "level": 3,
+    "text": "Other things to note:"
+   },
+   {
+    "level": 3,
+    "text": "This property features an exterior security cameras facing front door / parking area and the rear fire pit area. The camera does not look inside at all. The cabin is equipped with Smart TVs however Guests will need to bring their own passwords for Netflix, Disney+, Amazon, etc. Please do not run the fireplace and the air conditioner at the same time. Additional Rules. By confirming your booking, you agree to adhere to the Rental Rules set forth in this listing. The rental agreement is as follows:"
+   },
+   {
+    "level": 0,
+    "text": "Rental Rules"
+   },
+   {
+    "level": 1,
+    "text": "1. Smoking is NOT allowed, and Drugs of any kind are NOT permitted"
+   },
+   {
+    "level": 1,
+    "text": "2. People other than those in the Guest party set forth in the on-line agreement may not stay overnight in the property. Any other person in the property is the sole responsibility of Guest. Guests are not allowed to exceed the occupancy limit agreed to in the on-line itinerary. No more than 13 persons (including infants) are allowed in the cabin at any time."
+   },
+   {
+    "level": 1,
+    "text": "3. Guests should not create excessive noise at a level that disturbs neighbors; Code- enforced neighborhood quiet hours are from 9:00p.m. – 8:00a.m. If you plan to party do not book this cabin. It is our home and you must treat it with respect."
+   },
+   {
+    "level": 1,
+    "text": "4. This cabin is privately owned; the owners are NOT responsible for any accidents, injuries or illness that occurs while on the premises or its facilities. The Homeowners are NOT responsible for the loss of personal belongings or valuables of the guest. By accepting this reservation, it is agreed that all guests are expressly assuming the risk of any harm arising from their use of the premises or others whom they invite to use the premise."
+   },
+   {
+    "level": 1,
+    "text": "5. Keep the property and all furnishings in good order, removing any items from the cabin including living and kitchen furnishings is not permitted."
+   },
+   {
+    "level": 1,
+    "text": "6. Only use appliances for their intended uses"
+   },
+   {
+    "level": 1,
+    "text": "7. Pets are NOT allowed."
+   },
+   {
+    "level": 1,
+    "text": "8. Parking is limited to 4 vehicle(s). Vehicles are to be parked in designated parking areas only. Parking on the road is not permitted. Any illegally parked cars are subject to towing; applicable fines/towing fees are the sole responsibility of the vehicle owner."
+   },
+   {
+    "level": 1,
+    "text": "9. Housekeeping: There is no daily housekeeping service. While linens and bath towels are included in the unit, daily maid service is not included in the rental rate. We do not permit towels or linens to be taken from the units. Check Out is at 10am. Before you leave, we ask that the items below be completed to help our housekeeper quickly prepare for the next guest. Please load all dishes into the dishwasher and run it on the normal cycle. Please remove and dispose of all items in the refrigerator, freezer, and cabinets. Leave all bedding on the bed, and put all towels in shower or tub."
+   },
+   {
+    "level": 1,
+    "text": "10. Please lock all doors and all windows upon departure. Please turn off all lights."
+   },
+   {
+    "level": 1,
+    "text": "11. Do not leave garbage outside or anywhere besides designated trash cans."
+   },
+   {
+    "level": 1,
+    "text": "12. Hot Tub: [No children under the age of 18 permitted in hot tubs at any time] [without adult supervision]. When using the hot tub, remember there is a certain health risk associated with this facility. Use at your own risk. Our housekeepers drain, sanitize, refill, and replenish chemicals in all tubs prior to your arrival; therefore, it may not be warm until later that evening. DO NOT STAND ON THE HOT TUB COVERS. Hot tub covers are for insulation purposes and are not designed to support a person or persons. They will break and you will be charged for replacement. Remember when not using the hot tub, leave cover on so hot tub will stay warm."
+   },
+   {
+    "level": 1,
+    "text": "13. Fireplace: Please do not throw any paper or other combustible materials in the fireplace. [Fireplaces are turned off from April 1 to October 1. They are not operational during this time of the year.]"
+   },
+   {
+    "level": 1,
+    "text": "14. Water and Septic: The cabin has a septic system. The septic system is highly effective; however, it will clog up if improper material is flushed. DO NOT FLUSH anything other than toilet paper. No feminine products should be flushed at any time. If it is found that feminine products have been flushed and clog the septic system, you could be charged damages of up to $1,000."
+   },
+   {
+    "level": 1,
+    "text": "15. Storms: No refunds will be given for storms. [Mountain roads can be curvy and steep. We highly recommend a four-wheel drive vehicle during the snow months. We do not refund due to road conditions."
+   },
+   {
+    "level": 1,
+    "text": "16. Any damage to any items in the cabin including couches, chairs, tables, TVs, pool table, hot tub, beds, sheets, towels, pillows, etc., are the responsibility of the renter. Every item will be looked at before arrival and after departure. If you cause damage, notify the owner immediately. We will find it and charge you regardless. It is our home. Treat it as if it were your own. Failure to comply with the above rules will result in non-return of security deposit and possible additional charges. Booking through Airbnb or vrbo assigns your consent to all listed under \"House Rules\""
+   }
+  ],
+  "policies": {
+   "pets": false,
+   "smoking": false,
+   "events": false
+  }
+ },
+ "cabana-on-osprey": {
+  "beds": 6,
+  "checkIn": "16:00",
+  "checkOut": "10:00",
+  "about": [
+   "Upon entering the front door, you walk into an open concept living room, dining area and kitchen. The dining table seats 8. The fully equipped kitchen features granite countertops, all new stainless appliances, and a large selection of small appliances (including an airfyer)  and cooking supplies to have a wonderful cooking experience. Adjacent to the kitchen and dining area is the living room, featuring two plush leather couches, wall mounted 40” smart tv and a gorgeous, stacked stone accented electric fireplace. Conveniently located adjacent to the living room and kitchen is a half bathroom. The laundry closet is next to the refrigerator. Also, on the main level is bedroom #1 featuring a king bed and en-suite full bathroom. The main level deck has a privacy fence and (4) rocking chairs.",
+   "Upstairs you will find bedrooms #2 & #3. Each bedroom has a very comfortable king size bed, dresser, smart TV, and rack to hang clothes from. There are 2 separate full bathrooms located upstairs. There is plenty of room for multiple people to get ready for the day’s adventures simultaneously. The kids bunk room is also upstairs. This room has custom built in bunk beds with 4 twin beds, a slide, swings, and smart TV. If the weather is not cooperating you can stay indoors with the fireplace and play cards or board games. The white cabinet in the hallway offers a selection of games. The upper-level deck also has rocking chairs and is a great place to take in the views.",
+   "The indoor heated SALTWATER pool is on the lower level. The awesome mural is a crowd favorite! There is a self-locking gate to keep all children safe from entering the pool room. Pool is heated to 80f. The pool is 6’x13’ and 4’ deep (absolutely no diving into the pool). This room is decorated with a tropical theme and even has a tiki bar. There is a 65\" smart TV on the wall to allow you to watch your favorite movie or sporting event from the pool! There is a basketball hoop and a giant connect 4 game as well. It should be noted that the pool is also professionally serviced between each guest. ** extra charges will apply if there is any sign of soap, chemicals, or bubbles added to the pool ** The 5th bathroom is located on the bottom floor as well.",
+   "All 3 decks span the side of the house and have rocking chairs so you can take in the sights in comfort. The gas BBQ grill on the lower deck will allow you to grill up a feast... If you prefer a traditional charcoal grill, there is one of those also on the side on house near the parking area. The lower deck is where you will find the 6-person hot tub, conveniently located steps away from the indoor pool! Guests will be happy to know that the hot tub is completely drained and cleaned prior to your arrival."
+  ],
+  "gettingThere": "Cabana on Osprey is located 1.25 miles off the Pigeon Forge Parkway at stop light #6 (Pine Mountain Rd.). The roads are relatively flat and well maintained. The drive should not be an issue for any car. You will find a large selection of restaurants, grocery stores and shopping within 5 minutes. If you are heading to the Gatlinburg strip expect a 25-minute drive, 10 minutes past Gatlinburg you will be entering the Great Smoky Mountains National Park. A short 10-minute drive from the cabin will get you to Dollywood! Upon request, we will share a comprehensive list of activities and sights to see.",
+  "parking": "Parking at the cabin allows for up to 3 vehicles, please park parallel to the house, and be sure to stay out of the road. The parking are is 65' long.",
+  "notes": [
+   "Disclaimer: The host is not responsible for any lost, stolen, or forgotten items during your stay. Additionally, we cannot be held liable for power outages, storms, fires, or any other unforeseen events classified as acts of God. We encourage guests to take necessary precautions and travel insurance is recommended for added peace of mind.",
+   "Nature & Wildlife Notice: Our cabin is located in the Smoky Mountains, where encounters with wildlife are common. Bears and snakes are native to the area, so please be mindful of your surroundings and properly store food to avoid attracting animals. Additionally, at certain times of the year, you may notice ladybugs inside the cabin—this is normal for the region. While the home is professionally serviced by a pest control company, please remember that you are in the woods, and occasional bugs or insects may be present.",
+   "This cabin was just completed in September of 2021. This is a brand-new resort community and is still an active construction site. Our cabin is located near the top of the neighborhood and has less noise and traffic, but you should still expect some noise and inconvenience. Workers are actively trying to finish the common area and other homes. Somedays are quieter than others, but please be prepared for noise from 9am to 5pm."
+  ],
+  "amenities": [
+   "Pack ’n play/travel crib",
+   "Bathtub",
+   "Iron",
+   "Table corner guards",
+   "Clothing storage",
+   "Changing table",
+   "Patio or balcony",
+   "Extra pillows and blankets",
+   "Room-darkening shades",
+   "Freezer",
+   "Cable TV",
+   "Refrigerator",
+   "Essentials",
+   "Microwave",
+   "Wireless Internet",
+   "Fire extinguisher",
+   "Toaster",
+   "Dishes and silverware",
+   "Barbeque utensils",
+   "TV",
+   "Private entrance",
+   "Baking sheet",
+   "Hangers",
+   "Stair gates",
+   "First aid kit",
+   "Cookware",
+   "Wine glasses",
+   "Dishwasher",
+   "Hot water",
+   "Dining table",
+   "Smoke detector",
+   "Blender",
+   "Heating",
+   "Carbon monoxide detector",
+   "Ceiling fan",
+   "Hair dryer",
+   "Hot tub",
+   "Kitchen",
+   "Oven",
+   "Board games",
+   "Dryer",
+   "High chair",
+   "Stove",
+   "Bed linens",
+   "Garage",
+   "Coffee maker",
+   "Private pool",
+   "Washer",
+   "BBQ grill",
+   "Air conditioning",
+   "Indoor fireplace",
+   "Suitable for children (2-12 years)",
+   "Suitable for infants (under 2 years)"
+  ],
+  "photos": [
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/a66a72ef-8667-4a-Yjmqr",
+    "alt": "Cabana on Osprey photo 1"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/7b42ecdd-b732-4e-7EVMU",
+    "alt": "Hot tub at Cabana on Osprey"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/b52d4531-73fa-4a-1sIFB",
+    "alt": "Bunk room at Cabana on Osprey"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/280bdfec-3177-40-J1z_k",
+    "alt": "Cabana on Osprey photo 4"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/e907ece2-1e71-4c-oe-Ct",
+    "alt": "Cabana on Osprey photo 5"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/29542d7b-268e-45-r3Gd7",
+    "alt": "Dining table & kitchen at Cabana on Osprey"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/132a18cd-b42a-45-yEAkK",
+    "alt": "Cabana on Osprey photo 7"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/9ceb574b-3284-4f-mw2Q7",
+    "alt": "Drone shot front of house at Cabana on Osprey"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/6d186b33-cb19-44-q168E",
+    "alt": "Cabana on Osprey photo 9"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/82356dc0-bc2f-46-MCP7f",
+    "alt": "Living room & kitchen at Cabana on Osprey"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/48741c69-297c-4e-aS885",
+    "alt": "Living room & kitchen at Cabana on Osprey"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/4bad9f6e-a23b-4d-0AEat",
+    "alt": "Dining table & kitchen at Cabana on Osprey"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/8b8f26d6-c851-4f-lW98x",
+    "alt": "Dining table & living room at Cabana on Osprey"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/c6ec2b46-2ff0-48-S5Krr",
+    "alt": "Coffee makers at Cabana on Osprey"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/cad466ed-5d1b-4f-Bih-M",
+    "alt": "Dinning room & living room at Cabana on Osprey"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/b90e362f-a80d-44-Owvtn",
+    "alt": "Bathroom #1 - common area half bath at Cabana on Osprey"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/320fdea2-988a-40-x4Bco",
+    "alt": "Bedroom #1 - master at Cabana on Osprey"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/dcd1273e-0a77-43-Z3JPy",
+    "alt": "Bedroom #1 - master at Cabana on Osprey"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/5736daed-153d-45-fKlK6",
+    "alt": "Bathroom #2 - master bedroom en-suite at Cabana on Osprey"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/0e53e59a-4f23-4d-42gq0",
+    "alt": "Bedroom #1 - master at Cabana on Osprey"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/e5301468-6d16-4b-akwWA",
+    "alt": "Bathroom #3 -upstairs at Cabana on Osprey"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/dc083fcf-80f0-42-O9jnr",
+    "alt": "Bedroom #2 at Cabana on Osprey"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/c5c9e2b8-e0b2-49-K9zow",
+    "alt": "Bedroom #2 at Cabana on Osprey"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/862c21ba-a2ac-4f--oG89",
+    "alt": "Bedroom #2 at Cabana on Osprey"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/9e55a25b-1d78-4e-i8axq",
+    "alt": "Bedroom #2 at Cabana on Osprey"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/787c79e9-4cfa-45-vQ6Uy",
+    "alt": "Bathroom #4 - upstairs at Cabana on Osprey"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/068a10a1-8213-4f-nTUTX",
+    "alt": "Cabana on Osprey photo 27"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/05afa91e-132f-4a-N1TFa",
+    "alt": "Hallway at Cabana on Osprey"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/16d1115f-3bc5-42-QwZtT",
+    "alt": "Bedroom #3 at Cabana on Osprey"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/7ea58605-174c-45-WPGYZ",
+    "alt": "Bedroom #3 at Cabana on Osprey"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/198095b9-dc11-49-IvAdK",
+    "alt": "Bedroom #3 at Cabana on Osprey"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/14a5ea98-cba9-46-gTFts",
+    "alt": "Bathroom #5 at Cabana on Osprey"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/8b3b4242-7dd1-4f-z_Hv1",
+    "alt": "Cabana on Osprey photo 33"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/fd3161c2-2ef6-42-RdjjD",
+    "alt": "Cabana on Osprey photo 34"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/d3bcf161-3ded-43-F8ryi",
+    "alt": "Cabana on Osprey photo 35"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/f5f805ea-82be-43-kQyfx",
+    "alt": "Cabana on Osprey photo 36"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/59944643-7cef-47-QFP1w",
+    "alt": "Pool at Cabana on Osprey"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/286f9305-b46f-4b-L4SGr",
+    "alt": "Cabana on Osprey photo 38"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/f28aae46-d10b-42-UbJsV",
+    "alt": "Side of house ground level at Cabana on Osprey"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/b06e9c05-4e5c-49-U9Svn",
+    "alt": "View from upper deck at Cabana on Osprey"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/ba4b3b6b-e22b-45-T1PiL",
+    "alt": "Upper deck at Cabana on Osprey"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/04cf670b-a659-4d-Q61G4",
+    "alt": "Cabana on Osprey photo 42"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/676fb3ea-5a46-4c-yRM7z",
+    "alt": "Upper deck at Cabana on Osprey"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/ef9d6050-452e-4e-H7iq_",
+    "alt": "Hot tub (at night) at Cabana on Osprey"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/480cf8c2-3cdc-40-4K9Ki",
+    "alt": "Cabana on Osprey photo 45"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/0762032d-9219-4f-IqBi-",
+    "alt": "Cabana on Osprey photo 46"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/42549f49-7a57-45-NNqQu",
+    "alt": "Cabana on Osprey photo 47"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/a98dbda4-41fa-4a-xB2hB",
+    "alt": "Cabana on Osprey photo 48"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/cc69edf1-d9df-44-5KPMa",
+    "alt": "Cabana on Osprey photo 49"
+   },
+   {
+    "src": "https://assets.guesty.com/image/upload/listing_images_s3/production/property-photos/37fa8880503e86949c12728859e462d4608297845290db95/695bbc5b714f2f00148920c2/610c507f-eeed-42-oH3fn",
+    "alt": "Cabana on Osprey photo 50"
+   }
+  ],
+  "rules": [
+   {
+    "level": 3,
+    "text": "Must be 25 years old to book"
+   },
+   {
+    "level": 3,
+    "text": "Must follow all rules in listing description"
+   },
+   {
+    "level": 0,
+    "text": "Additional Rules"
+   },
+   {
+    "level": 1,
+    "text": "By confirming your booking, you agree to adhere to the Rental Rules set forth in this listing."
+   },
+   {
+    "level": 3,
+    "text": "The rental agreement is as follows:"
+   },
+   {
+    "level": 0,
+    "text": "Rental Rules"
+   },
+   {
+    "level": 1,
+    "text": "1. Smoking is NOT allowed, and Drugs of any kind are NOT permitted"
+   },
+   {
+    "level": 1,
+    "text": "2. People other than those in the Guest party set forth in the on-line agreement may not stay overnight in the property. Any other person in the property is the sole responsibility of Guest. Guests are not allowed to exceed the occupancy limit agreed to in the on-line itinerary. No more than 13 persons (including infants) are allowed in the cabin at any time."
+   },
+   {
+    "level": 1,
+    "text": "3. Guests should not create excessive noise at a level that disturbs neighbors; Code- enforced neighborhood quiet hours are from 9:00p.m. – 8:00a.m. If you plan to party do not book this cabin. It is our home and you must treat it with respect."
+   },
+   {
+    "level": 1,
+    "text": "4. This cabin is privately owned; the owners are NOT responsible for any accidents, injuries or illness that occurs while on the premises or its facilities. The Homeowners are NOT responsible for the loss of personal belongings or valuables of the guest. By accepting this reservation, it is agreed that all guests are expressly assuming the risk of any harm arising from their use of the premises or others whom they invite to use the premise."
+   },
+   {
+    "level": 1,
+    "text": "5. Keep the property and all furnishings in good order, removing any items from the cabin including living and kitchen furnishings is not permitted."
+   },
+   {
+    "level": 1,
+    "text": "6. Only use appliances for their intended uses"
+   },
+   {
+    "level": 1,
+    "text": "7. Pets are NOT allowed."
+   },
+   {
+    "level": 1,
+    "text": "8. Parking is limited to 3 vehicle(s). Vehicles are to be parked in designated parking areas only. Parking on the road is not permitted. Any illegally parked cars are subject to towing; applicable fines/towing fees are the sole responsibility of the vehicle owner."
+   },
+   {
+    "level": 1,
+    "text": "9. Housekeeping: There is no daily housekeeping service. While linens and bath towels are included in the unit, daily maid service is not included in the rental rate. We do not permit towels or linens to be taken from the units. Check Out is at 10am. Before you leave, we ask that the items below be completed to help our housekeeper quickly prepare for the next guest. Please load all dishes into the dishwasher and run it on the normal cycle. Please remove and dispose of all items in the refrigerator, freezer, and cabinets. Leave all bedding on the bed, and put all towels in shower or tub."
+   },
+   {
+    "level": 1,
+    "text": "10. Please lock all doors and all windows upon departure. Please turn off all lights."
+   },
+   {
+    "level": 1,
+    "text": "11. Do not leave garbage outside or anywhere besides designated trash cans."
+   },
+   {
+    "level": 1,
+    "text": "12. Hot Tub: [No children under the age of 18 permitted in hot tubs at any time] [without adult supervision]. When using the hot tub, remember there is a certain health risk associated with this facility. Use at your own risk. Our housekeepers drain, sanitize, refill, and replenish chemicals in all tubs prior to your arrival; therefore, it may not be warm until later that evening. DO NOT STAND ON THE HOT TUB COVERS. Hot tub covers are for insulation purposes and are not designed to support a person or persons. They will break and you will be charged for replacement. Remember when not using the hot tub, leave cover on so hot tub will stay warm."
+   },
+   {
+    "level": 1,
+    "text": "13. Fireplace: Please do not throw any paper or other combustible materials in the fireplace."
+   },
+   {
+    "level": 1,
+    "text": "14. Water and Septic: The cabin has a septic system. The septic system is highly effective; however, it will clog up if improper material is flushed. DO NOT FLUSH anything other than toilet paper. No feminine products should be flushed at any time. If it is found that feminine products have been flushed and clog the septic system, you could be charged damages of up to $1,000."
+   },
+   {
+    "level": 1,
+    "text": "15. Storms: No refunds will be given for storms. [Mountain roads can be curvy and steep. We highly recommend a four-wheel drive vehicle during the snow months. We do not refund due to road conditions."
+   },
+   {
+    "level": 1,
+    "text": "16. Pool Rules: No diving into the pool, No running or rough play in or around pool, No children allowed in pool without proper supervision, Enter the pool only if you know how to properly swim, have an experienced swimmer to assist you, or have a flotation device such as a life vest, arm floats, or air cushion, Make sure another swimmer is either with you in the pool or is there supervising whenever you are in the water, Avoid going to the pool if you have the flu, open wounds, or warts, No animals or pets allowed in pool, No glass allowed in pool or on pool deck, The pool is not a toilet. Please use the bathroom, must adhere to all rules and warning on pool room wall! owner is not responsible for any injuries - USE AT YOUR OWN RISK! ** extra charges will apply if there is any sign of soap, chemicals, or bubbles added to the pool **"
+   },
+   {
+    "level": 1,
+    "text": "17.Any damage to any items in the cabin including couches, chairs, tables, TVs, pool table, hot tub, beds, sheets, towels, pillows, etc., are the responsibility of the renter. Every item will be looked at before arrival and after departure. If you cause damage, notify the owner immediately. We will find it and charge you regardless. It is our home. Treat it as if it were your own. Failure to comply with the above rules will result in non-return of security deposit and possible additional charges. Booking through Airbnb or vrbo assigns your consent to all listed under \"House Rules\""
+   }
+  ],
+  "policies": {
+   "pets": false,
+   "smoking": false,
+   "events": false
+  }
+ }
+}

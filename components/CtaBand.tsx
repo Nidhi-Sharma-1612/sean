@@ -1,9 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowRight, Mail, Star } from "lucide-react";
 import Reveal from "@/components/Reveal";
 import { averageRating, cabins, totalReviews } from "@/lib/data/cabins";
 import { photos } from "@/lib/photos";
-import { bookingUrl, site } from "@/lib/site";
 
 const lowestRate = Math.min(...cabins.map((cabin) => cabin.nightlyFrom));
 
@@ -37,20 +37,20 @@ export default function CtaBand() {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
-            <a
-              href={bookingUrl()}
+            <Link
+              href="/cabins"
               className="group inline-flex items-center justify-center gap-2 rounded-full bg-caramel-300 px-8 py-4 text-sm font-semibold text-bark-800 transition-colors hover:bg-white"
             >
               Check Availability
               <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
-            </a>
-            <a
-              href={`mailto:${site.email}`}
+            </Link>
+            <Link
+              href="/contact"
               className="inline-flex items-center justify-center gap-2 rounded-full border border-white/60 px-8 py-4 text-sm font-semibold text-white transition-colors hover:bg-white/10"
             >
               <Mail size={16} />
-              Email Us
-            </a>
+              Contact Us
+            </Link>
           </div>
 
           <dl className="mt-10 flex flex-wrap gap-x-10 gap-y-4 border-t border-white/25 pt-6">

@@ -1,9 +1,9 @@
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import CabinCard from "@/components/CabinCard";
 import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
 import { cabins } from "@/lib/data/cabins";
-import { bookingUrl } from "@/lib/site";
 
 export default function FeaturedCabins() {
   return (
@@ -15,13 +15,13 @@ export default function FeaturedCabins() {
             title="Three cabins, three ways to do the Smokies"
             description="Big views in Gatlinburg, an indoor pool close to the Pigeon Forge strip, and a secluded retreat outside Sevierville."
           />
-          <a
-            href={bookingUrl()}
+          <Link
+            href="/cabins"
             className="group inline-flex shrink-0 items-center gap-2 text-sm font-semibold text-pine-600 transition-colors hover:text-forest-800"
           >
             See all availability
             <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
-          </a>
+          </Link>
         </Reveal>
 
         <div className="mx-auto mt-14 grid max-w-xl grid-cols-1 gap-6 lg:max-w-none lg:grid-cols-3">

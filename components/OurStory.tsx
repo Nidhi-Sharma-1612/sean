@@ -1,13 +1,13 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight, Mail } from "lucide-react";
 import { useRef } from "react";
 import Reveal from "@/components/Reveal";
 import { averageRating, cabins, totalReviews } from "@/lib/data/cabins";
 import { photos } from "@/lib/photos";
-import { site } from "@/lib/site";
 
 const journey = [
   { place: "California", detail: "Where we're from" },
@@ -92,20 +92,20 @@ export default function OurStory() {
           </dl>
 
           <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
-            <a
-              href={`mailto:${site.email}`}
+            <Link
+              href="/contact"
               className="inline-flex items-center gap-2 rounded-full bg-pine-600 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-forest-800"
             >
               <Mail size={16} />
               Say hello
-            </a>
-            <a
-              href="#cabins"
+            </Link>
+            <Link
+              href="/cabins"
               className="group inline-flex items-center gap-2 text-sm font-semibold text-pine-600 transition-colors hover:text-forest-800"
             >
               Meet our cabins
               <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
-            </a>
+            </Link>
           </div>
         </Reveal>
       </div>

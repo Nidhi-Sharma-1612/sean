@@ -1,14 +1,15 @@
+import Link from "next/link";
 import { ArrowRight, Bath, BedDouble, Check, MapPin, Star, Users } from "lucide-react";
 import CabinGallery from "@/components/CabinGallery";
 import type { Cabin } from "@/lib/data/cabins";
-import { bookingUrl } from "@/lib/site";
+import { cabinUrl, type StaySearch } from "@/lib/search";
 
-function formatRating(rating: number) {
+export function formatRating(rating: number) {
   return rating.toFixed(2).replace(/0$/, "");
 }
 
-export default function CabinCard({ cabin }: { cabin: Cabin }) {
-  const href = bookingUrl({ cabinId: cabin.id });
+export default function CabinCard({ cabin, search }: { cabin: Cabin; search?: StaySearch }) {
+  const href = cabinUrl(cabin.slug, search);
   const facts = [
     { icon: BedDouble, value: cabin.bedrooms, label: "Bedrooms" },
     { icon: Bath, value: cabin.bathrooms, label: "Baths" },
@@ -16,15 +17,15 @@ export default function CabinCard({ cabin }: { cabin: Cabin }) {
   ];
 
   return (
-    <article className="flex h-full flex-col overflow-hidden rounded-3xl bg-white shadow-sm ring-1 ring-bark-800/10 transition-shadow duration-300 hover:shadow-xl">
+    <article className="group flex h-full flex-col overflow-hidden rounded-3xl bg-white shadow-sm ring-1 ring-bark-800/10 transition-shadow duration-300 hover:shadow-xl">
       <div className="relative">
-        <CabinGallery name={cabin.name} photos={cabin.photos} />
+        <CabinGallery name={cabin.name} photos={cabin.photos} href={href} />
         <span className="pointer-events-none absolute left-3 top-3 rounded-full bg-forest-800 px-3 py-1 text-xs font-semibold text-white">
           {cabin.bestFor}
         </span>
       </div>
 
-      <div className="flex flex-1 flex-col p-6">
+      <div className="relative flex flex-1 flex-col p-6">
         <div className="flex items-center justify-between gap-3 text-sm text-bark-600">
           <span className="flex items-center gap-1.5">
             <MapPin size={14} aria-hidden="true" className="text-pine-600" />
@@ -38,9 +39,10 @@ export default function CabinCard({ cabin }: { cabin: Cabin }) {
         </div>
 
         <h3 className="mt-2 font-serif text-2xl text-bark-800">
-          <a href={href} className="transition-colors hover:text-pine-600">
+          {/* Stretched over the card body, so a click anywhere below the photos opens the cabin. */}
+          <Link href={href} className="transition-colors after:absolute after:inset-0 hover:text-pine-600">
             {cabin.name}
-          </a>
+          </Link>
         </h3>
         <p className="mt-2 text-sm leading-relaxed text-bark-600 lg:min-h-23">{cabin.summary}</p>
 
@@ -74,14 +76,10 @@ export default function CabinCard({ cabin }: { cabin: Cabin }) {
             </p>
             <p className="text-[11px] text-bark-600">Additional charges may apply</p>
           </div>
-          <a
-            href={href}
-            aria-label={`Check dates for ${cabin.name}`}
-            className="group inline-flex shrink-0 items-center gap-1.5 rounded-full bg-pine-600 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-forest-800"
-          >
-            Check dates
-            <ArrowRight size={15} className="transition-transform group-hover:translate-x-0.5" />
-          </a>
+          <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-pine-600 px-5 py-2.5 text-sm font-semibold text-white transition-colors group-hover:bg-forest-800">
+            View cabin
+            <ArrowRight size={15} aria-hidden="true" />
+          </span>
         </div>
       </div>
     </article>

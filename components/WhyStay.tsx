@@ -1,13 +1,14 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowUpRight, Baby, BedDouble, Droplets, Gamepad2, Users, Waves, type LucideIcon } from "lucide-react";
 import { useState } from "react";
 import Reveal from "@/components/Reveal";
 import { cabins } from "@/lib/data/cabins";
 import { LISTING_ROOT } from "@/lib/photos";
-import { bookingUrl } from "@/lib/site";
+import { cabinUrl } from "@/lib/search";
 
 interface Feature {
   icon: LucideIcon;
@@ -83,14 +84,14 @@ function CabinLinks({ feature }: { feature: Feature }) {
         {cabins
           .filter((cabin) => feature.cabins.includes(cabin.name))
           .map((cabin) => (
-            <a
+            <Link
               key={cabin.id}
-              href={bookingUrl({ cabinId: cabin.id })}
+              href={cabinUrl(cabin.slug)}
               className="inline-flex items-center gap-1 rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-forest-800 transition-colors hover:bg-caramel-300"
             >
               {cabin.name}
               <ArrowUpRight size={13} aria-hidden="true" />
-            </a>
+            </Link>
           ))}
       </div>
     </div>

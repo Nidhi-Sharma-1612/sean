@@ -7,6 +7,7 @@ export interface CabinPhoto {
 
 export interface Cabin {
   id: string;
+  slug: string;
   name: string;
   town: string;
   summary: string;
@@ -26,6 +27,7 @@ export interface Cabin {
 export const cabins: Cabin[] = [
   {
     id: "695bbc5b3fe47f0015b6ba42",
+    slug: "bluff-ridge-haven",
     name: "Bluff Ridge Haven",
     town: "Sevierville",
     summary:
@@ -48,6 +50,7 @@ export const cabins: Cabin[] = [
   },
   {
     id: "695bbc5ba87237001523e3c4",
+    slug: "pine-top-vista",
     name: "Pine Top Vista",
     town: "Gatlinburg",
     summary:
@@ -70,6 +73,7 @@ export const cabins: Cabin[] = [
   },
   {
     id: "695bbc5b714f2f00148920c2",
+    slug: "cabana-on-osprey",
     name: "Cabana on Osprey",
     town: "Pigeon Forge",
     summary:
@@ -100,3 +104,7 @@ export const averageRating =
   ) / 100;
 
 export const maxGuests = Math.max(...cabins.map((cabin) => cabin.guests));
+
+export function findCabin(slug?: string) {
+  return cabins.find((cabin) => cabin.slug === slug);
+}

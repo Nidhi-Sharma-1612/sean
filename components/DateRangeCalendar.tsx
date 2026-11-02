@@ -31,6 +31,7 @@ export default function DateRangeCalendar({
   checkOut,
   calendars,
   note,
+  singleMonth = false,
   onSelect,
   onClear,
   onDone,
@@ -38,7 +39,8 @@ export default function DateRangeCalendar({
   checkIn: Date | null;
   checkOut: Date | null;
   calendars: CabinCalendar[] | null;
-  note: string | null;
+  note?: string | null;
+  singleMonth?: boolean;
   onSelect: (date: Date) => void;
   onClear: () => void;
   onDone: () => void;
@@ -123,9 +125,9 @@ export default function DateRangeCalendar({
         </button>
       </div>
 
-      <div className="mt-1 flex flex-col gap-4 md:flex-row md:gap-6">
+      <div className={`mt-1 flex flex-col gap-4 ${singleMonth ? "" : "md:flex-row md:gap-6"}`}>
         {renderMonth(viewMonth)}
-        <div className="hidden flex-1 md:block">{renderMonth(addMonths(viewMonth, 1))}</div>
+        {!singleMonth && <div className="hidden flex-1 md:block">{renderMonth(addMonths(viewMonth, 1))}</div>}
       </div>
 
       {note && <p className="mt-2 rounded-lg bg-stone-50 px-3 py-1.5 text-[11px] text-bark-600">{note}</p>}

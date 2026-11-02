@@ -1,9 +1,10 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { AnimatePresence, motion, type PanInfo } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { useState } from "react";
+import { useRef, useState, type MouseEvent } from "react";
 import type { CabinPhoto } from "@/lib/data/cabins";
 
 const SWIPE_DISTANCE = 40;
@@ -12,9 +13,18 @@ const sizes = "(min-width: 1024px) 33vw, (min-width: 640px) 576px, 100vw";
 const arrow =
   "absolute top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-forest-800 shadow-sm transition-opacity hover:bg-white focus-visible:opacity-100 lg:opacity-0 lg:group-hover/gallery:opacity-100";
 
-export default function CabinGallery({ name, photos }: { name: string; photos: CabinPhoto[] }) {
+export default function CabinGallery({
+  name,
+  photos,
+  href,
+}: {
+  name: string;
+  photos: CabinPhoto[];
+  href: string;
+}) {
   const [index, setIndex] = useState(0);
   const [warm, setWarm] = useState(false);
+  const dragged = useRef(false);
 
   function step(delta: number) {
     setIndex((current) => (current + delta + photos.length) % photos.length);
@@ -22,6 +32,12 @@ export default function CabinGallery({ name, photos }: { name: string; photos: C
 
   function handleDragEnd(_: unknown, { offset }: PanInfo) {
     if (Math.abs(offset.x) > SWIPE_DISTANCE) step(offset.x < 0 ? 1 : -1);
+  }
+
+  // A swipe ends with a click event; only a real tap should open the cabin.
+  function handleLinkClick(event: MouseEvent) {
+    if (dragged.current) event.preventDefault();
+    dragged.current = false;
   }
 
   const neighbors = [
@@ -62,16 +78,27 @@ export default function CabinGallery({ name, photos }: { name: string; photos: C
           drag="x"
           dragConstraints={{ left: 0, right: 0 }}
           dragElastic={0.15}
+          onDragStart={() => {
+            dragged.current = true;
+          }}
           onDragEnd={handleDragEnd}
         >
-          <Image
-            src={photos[index].src}
-            alt={photos[index].alt}
-            fill
-            sizes={sizes}
+          <Link
+            href={href}
             draggable={false}
-            className="object-cover"
-          />
+            onClick={handleLinkClick}
+            aria-label={`View ${name}`}
+            className="absolute inset-0"
+          >
+            <Image
+              src={photos[index].src}
+              alt={photos[index].alt}
+              fill
+              sizes={sizes}
+              draggable={false}
+              className="object-cover"
+            />
+          </Link>
         </motion.div>
       </AnimatePresence>
 
