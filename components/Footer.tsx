@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ArrowUp, Mail, MapPin } from "lucide-react";
+import NewsletterForm from "@/components/NewsletterForm";
 import { cabins } from "@/lib/data/cabins";
 import { cabinUrl } from "@/lib/search";
 import { navLinks, site } from "@/lib/site";
@@ -24,6 +25,18 @@ export default function Footer() {
   return (
     <footer className="text-white">
       <div className="bg-forest-800">
+        <div className="border-b border-white/10">
+          <div className="mx-auto grid max-w-7xl gap-6 px-6 py-10 lg:grid-cols-2 lg:items-center lg:gap-12">
+            <div>
+              <h2 className="font-serif text-2xl sm:text-3xl">Get mountain news and offers</h2>
+              <p className="mt-2 max-w-md text-sm text-white/80">
+                Seasonal deals, open dates and things to do in the Smokies. Unsubscribe anytime.
+              </p>
+            </div>
+            <NewsletterForm />
+          </div>
+        </div>
+
         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-x-6 gap-y-12 px-6 pb-14 pt-10 lg:grid-cols-[2fr_1.4fr_1fr_1.5fr] lg:gap-x-12">
           <div className="col-span-2 lg:col-span-1">
             <Link href="/" aria-label={`${site.name} home`} className="inline-block">

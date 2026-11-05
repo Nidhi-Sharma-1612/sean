@@ -50,3 +50,14 @@ export async function sendContactMessage(message: ContactMessage) {
     text: [...filled.map(([label, value]) => `${label}: ${value}`), "", message.message].join("\n"),
   });
 }
+
+/** No mailing-list service yet, so each sign-up is emailed to the owners to add by hand. */
+export async function sendNewsletterSignup(email: string) {
+  await getTransport().sendMail({
+    from: { name: `${site.name} Website`, address: process.env.SMTP_USER ?? "" },
+    to: process.env.CONTACT_TO_EMAIL || site.email,
+    replyTo: email,
+    subject: `New newsletter sign-up: ${email}`,
+    text: `${email} signed up for the ${site.name} newsletter from the website footer.`,
+  });
+}
