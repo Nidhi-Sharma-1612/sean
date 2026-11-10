@@ -69,12 +69,8 @@ export default function CabinCard({ cabin, search }: { cabin: Cabin; search?: St
 
         <div className="mt-auto flex items-end justify-between gap-3 pt-6">
           <div>
-            <p className="text-bark-600">
-              <span className="text-xs">From </span>
-              <span className="font-serif text-2xl text-bark-800">${cabin.nightlyFrom}</span>
-              <span className="text-xs"> / night</span>
-            </p>
-            <p className="text-[11px] text-bark-600">Additional charges may apply</p>
+            <p className="font-serif text-lg text-bark-800">Rates vary by date</p>
+            <p className="text-[11px] text-bark-600">+ ${cabin.cleaningFee} cleaning fee</p>
           </div>
           <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-pine-600 px-5 py-2.5 text-sm font-semibold text-white transition-colors group-hover:bg-forest-800">
             View cabin

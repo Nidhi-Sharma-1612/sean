@@ -217,7 +217,7 @@ export default async function CabinPage({ params, searchParams }: PageProps<"/ca
         </section>
       </div>
 
-      <MobileBookBar price={cabin.nightlyFrom} />
+      <MobileBookBar />
     </div>
   );
 }

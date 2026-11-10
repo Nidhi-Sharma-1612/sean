@@ -6,8 +6,9 @@ import { formatRating } from "@/components/CabinCard";
 import DateRangeCalendar from "@/components/DateRangeCalendar";
 import { canStay } from "@/lib/availability";
 import type { Cabin } from "@/lib/data/cabins";
-import { formatDisplayDate, isAfter, nightsBetween, parseISODate } from "@/lib/date";
+import { formatDisplayDate, isAfter, nightsBetween, parseISODate, toISODate } from "@/lib/date";
 import type { StaySearch } from "@/lib/search";
+import { guestyBookingUrl } from "@/lib/site";
 import { useAvailability } from "@/lib/useAvailability";
 
 const stepper =
@@ -51,9 +52,8 @@ export default function BookingCard({ cabin, initial }: { cabin: Cabin; initial:
     <div className="rounded-3xl bg-white p-5 shadow-lg ring-1 ring-bark-800/10 sm:p-6">
       <div className="flex items-end justify-between gap-3">
         <p className="text-bark-600">
-          <span className="text-xs">From </span>
-          <span className="font-serif text-3xl text-bark-800">${cabin.nightlyFrom}</span>
-          <span className="text-xs"> / night</span>
+          <span className="block font-serif text-2xl text-bark-800">Rates vary by date</span>
+          <span className="block text-xs">+ ${cabin.cleaningFee} cleaning fee</span>
         </p>
         <p className="flex items-center gap-1 text-sm text-bark-600">
           <Star size={14} fill="currentColor" strokeWidth={0} aria-hidden="true" className="text-caramel-500" />
@@ -141,13 +141,12 @@ export default function BookingCard({ cabin, initial }: { cabin: Cabin; initial:
       )}
 
       {ready ? (
-        // Placeholder until the payment gateway is integrated.
-        <button
-          type="button"
+        <a
+          href={guestyBookingUrl(cabin.id, { checkIn: toISODate(checkIn), checkOut: toISODate(checkOut), guests })}
           className="mt-4 block w-full rounded-full bg-pine-600 py-3.5 text-center text-sm font-semibold text-white transition-colors hover:bg-forest-800"
         >
           Book Now
-        </button>
+        </a>
       ) : (
         <button
           type="button"
@@ -158,10 +157,6 @@ export default function BookingCard({ cabin, initial }: { cabin: Cabin; initial:
           <ChevronDown size={16} />
         </button>
       )}
-
-      <p className="mt-3 text-center text-xs text-bark-600">
-        You won&rsquo;t be charged yet. We&rsquo;ll confirm your total and availability by email.
-      </p>
     </div>
   );
 }

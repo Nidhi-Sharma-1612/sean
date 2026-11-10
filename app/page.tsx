@@ -5,7 +5,7 @@ import OurStory from "@/components/OurStory";
 import ExploreSmokies from "@/components/ExploreSmokies";
 import Testimonials from "@/components/Testimonials";
 import CtaBand from "@/components/CtaBand";
-import { averageRating, cabins, totalReviews } from "@/lib/data/cabins";
+import { averageRating, totalReviews } from "@/lib/data/cabins";
 import { photos } from "@/lib/photos";
 import { site } from "@/lib/site";
 
@@ -18,7 +18,6 @@ const structuredData = {
   email: site.email,
   image: photos.pineTopCabin,
   sameAs: [site.facebook],
-  priceRange: `From $${Math.min(...cabins.map((cabin) => cabin.nightlyFrom))} per night`,
   areaServed: "Great Smoky Mountains, Tennessee",
   aggregateRating: {
     "@type": "AggregateRating",

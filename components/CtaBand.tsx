@@ -2,10 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Mail, Star } from "lucide-react";
 import Reveal from "@/components/Reveal";
-import { averageRating, cabins, totalReviews } from "@/lib/data/cabins";
+import { averageRating, totalReviews } from "@/lib/data/cabins";
 import { photos } from "@/lib/photos";
-
-const lowestRate = Math.min(...cabins.map((cabin) => cabin.nightlyFrom));
 
 export default function CtaBand() {
   return (
@@ -62,8 +60,8 @@ export default function CtaBand() {
               </dd>
             </div>
             <div className="flex flex-col-reverse">
-              <dt className="text-xs text-white/80">Per night, additional charges may apply</dt>
-              <dd className="font-serif text-2xl">From ${lowestRate}</dd>
+              <dt className="text-xs text-white/80">See your exact total before you pay</dt>
+              <dd className="font-serif text-2xl">Rates vary by date</dd>
             </div>
           </dl>
         </div>
