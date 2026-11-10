@@ -17,6 +17,8 @@ export interface Cabin {
   bedrooms: number;
   bathrooms: number;
   nightlyFrom: number;
+  /** From the Guesty listing; the calendar feeds don't include minimum stays. */
+  minNights: number;
   /** Guesty's 10-point review score converted to 5 stars. */
   rating: number;
   reviewCount: number;
@@ -44,6 +46,7 @@ export const cabins: Cabin[] = [
     bedrooms: 5,
     bathrooms: 5,
     nightlyFrom: 350,
+    minNights: 1,
     rating: 5,
     reviewCount: 31,
     highlights: ["Indoor heated pool", "Game room", "Hot tub", "Kids' bunk room"],
@@ -67,6 +70,7 @@ export const cabins: Cabin[] = [
     bedrooms: 4,
     bathrooms: 3.5,
     nightlyFrom: 320,
+    minNights: 3,
     rating: 5,
     reviewCount: 7,
     highlights: ["Panoramic views", "Fire pit", "Hot tub", "Game room"],
@@ -90,6 +94,7 @@ export const cabins: Cabin[] = [
     bedrooms: 4,
     bathrooms: 4.5,
     nightlyFrom: 275,
+    minNights: 3,
     rating: 4.95,
     reviewCount: 24,
     highlights: ["Private indoor pool", "Hot tub", "3 decks", "Kids' bunk room"],
