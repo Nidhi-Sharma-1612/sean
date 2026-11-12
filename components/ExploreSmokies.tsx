@@ -2,51 +2,48 @@ import Image from "next/image";
 import NearbyPlanner from "@/components/NearbyPlanner";
 import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
-import { photos } from "@/lib/photos";
+import { DEFAULT_TILES, type TileContent } from "@/lib/home-content";
 
-const tiles = [
-  {
-    image: photos.smokiesCreek,
-    alt: "Mountain stream running over mossy boulders through green forest",
-    title: "Rivers & Forest Trails",
-    description: "Endless hiking trails, swimming spots and waterfalls in the National Park.",
-    className: "col-span-2 lg:row-span-2",
-    sizes: "(min-width: 1024px) 620px, 100vw",
-  },
-  {
-    image: photos.pineTopRidges,
-    alt: "Forested ridges rolling out toward distant peaks under a blue sky",
-    title: "Scenic Mountain Drives",
-    description: "Ridge after ridge of green, right outside the door.",
-    className: "col-span-2",
-    sizes: "(min-width: 1024px) 620px, 100vw",
-  },
-  {
-    image: photos.pineTopFirePit,
-    alt: "Fire pit benches on a grassy overlook at sunset",
-    title: "Fire-Pit Sunsets",
-    className: "",
-    sizes: "(min-width: 1024px) 300px, 50vw",
-  },
-  {
-    image: photos.neighborhoodPool,
-    alt: "Seasonal outdoor pool in the Pine Top Vista neighborhood, surrounded by trees",
-    title: "Pools & Pickleball",
-    className: "",
-    sizes: "(min-width: 1024px) 300px, 50vw",
-  },
+export type { TileContent };
+
+// Alt text and tile layout are fixed in code; title/description/image are
+// admin-editable (same order as below).
+const TILE_ALTS = [
+  "Mountain stream running over mossy boulders through green forest",
+  "Forested ridges rolling out toward distant peaks under a blue sky",
+  "Fire pit benches on a grassy overlook at sunset",
+  "Seasonal outdoor pool in the Pine Top Vista neighborhood, surrounded by trees",
+];
+const TILE_LAYOUT = [
+  { className: "col-span-2 lg:row-span-2", sizes: "(min-width: 1024px) 620px, 100vw" },
+  { className: "col-span-2", sizes: "(min-width: 1024px) 620px, 100vw" },
+  { className: "", sizes: "(min-width: 1024px) 300px, 50vw" },
+  { className: "", sizes: "(min-width: 1024px) 300px, 50vw" },
 ];
 
-export default function ExploreSmokies() {
+export default function ExploreSmokies({
+  eyebrow = "Explore the Smokies",
+  heading = "More than just a place to stay",
+  description = "Trails and waterfalls on one side, the bright lights of the Parkway on the other. Your cabin puts you between them.",
+  tileContent = DEFAULT_TILES,
+  nearbyHeading,
+  nearbyDescription,
+}: {
+  eyebrow?: string;
+  heading?: string;
+  description?: string;
+  tileContent?: TileContent[];
+  nearbyHeading?: string;
+  nearbyDescription?: string;
+}) {
+  const content = tileContent.length === DEFAULT_TILES.length ? tileContent : DEFAULT_TILES;
+  const tiles = content.map((c, i) => ({ ...c, alt: TILE_ALTS[i], ...TILE_LAYOUT[i] }));
+
   return (
     <section id="explore" className="bg-stone-50 py-24">
       <div className="mx-auto max-w-7xl px-6">
         <Reveal>
-          <SectionHeading
-            eyebrow="Explore the Smokies"
-            title="More than just a place to stay"
-            description="Trails and waterfalls on one side, the bright lights of the Parkway on the other. Your cabin puts you between them."
-          />
+          <SectionHeading eyebrow={eyebrow} title={heading} description={description} />
         </Reveal>
 
         <div className="mt-12 grid auto-rows-[11rem] grid-cols-2 gap-4 sm:auto-rows-[15rem] lg:grid-cols-4">
@@ -73,7 +70,7 @@ export default function ExploreSmokies() {
         </div>
 
         <Reveal className="mt-8">
-          <NearbyPlanner />
+          <NearbyPlanner heading={nearbyHeading} description={nearbyDescription} />
         </Reveal>
       </div>
     </section>

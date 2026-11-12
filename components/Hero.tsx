@@ -11,7 +11,17 @@ import { site } from "@/lib/site";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
-export default function Hero() {
+export default function Hero({
+  eyebrow = "Gatlinburg · Pigeon Forge · Sevierville",
+  heading = "Your Basecamp in the Great Smoky Mountains",
+  subheading,
+  image = photos.pineTopFall,
+}: {
+  eyebrow?: string;
+  heading?: string;
+  subheading?: string;
+  image?: string;
+}) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
   const photoY = useTransform(scrollYProgress, [0, 1], ["0%", "12%"]);
@@ -27,7 +37,7 @@ export default function Hero() {
             transition={{ duration: 12, ease: "easeOut" }}
           >
             <Image
-              src={photos.pineTopFall}
+              src={image}
               alt="Aerial view of Pine Top Vista cabin on a Smoky Mountain slope surrounded by autumn color"
               fill
               preload
@@ -48,7 +58,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.1, ease }}
             className="font-serif text-lg italic text-caramel-300"
           >
-            Gatlinburg &middot; Pigeon Forge &middot; Sevierville
+            {eyebrow}
           </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 24 }}
@@ -56,7 +66,7 @@ export default function Hero() {
             transition={{ duration: 0.9, delay: 0.2, ease }}
             className="mt-4 max-w-2xl text-balance font-serif text-[2.5rem] leading-[1.05] text-white sm:text-6xl lg:text-7xl"
           >
-            Your Basecamp in the Great Smoky Mountains
+            {heading}
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -64,7 +74,7 @@ export default function Hero() {
             transition={{ duration: 0.9, delay: 0.35, ease }}
             className="mt-4 max-w-lg text-base leading-relaxed text-white/90 sm:mt-6 sm:text-lg"
           >
-            {site.tagline}, in three cabins cared for by their owners.
+            {subheading ?? `${site.tagline}, in three cabins cared for by their owners.`}
           </motion.p>
           <motion.p
             initial={{ opacity: 0, y: 16 }}

@@ -11,6 +11,8 @@ import { formatDisplayDate, parseISODate } from "@/lib/date";
 import { getAvailability, isGuestyConfigured } from "@/lib/guesty";
 import { photos } from "@/lib/photos";
 import { parseSearch } from "@/lib/search";
+import { getCmsCabins } from "@/lib/cabin-cms";
+import { getPageSections, img, str } from "@/lib/cms";
 
 export const metadata: Metadata = {
   title: "Our Cabins",
@@ -32,16 +34,24 @@ export default async function CabinsPage({ searchParams }: PageProps<"/cabins">)
   const selected = findCabin(search.cabin);
   const checkIn = parseISODate(search.checkIn ?? "");
   const checkOut = parseISODate(search.checkOut ?? "");
-  const live = checkIn && checkOut ? await loadAvailability() : null;
+  const [live, cmsCabins, sections] = await Promise.all([
+    checkIn && checkOut ? loadAvailability() : Promise.resolve(null),
+    getCmsCabins(),
+    getPageSections("cabins-search"),
+  ]);
+  const intro = sections.intro ?? {};
+  const cmsById = new Map(cmsCabins.map((c) => [c.id, c]));
 
-  const results = cabins.filter((cabin) => {
-    if (selected && cabin.id !== selected.id) return false;
-    if (search.guests && cabin.guests < search.guests) return false;
-    if (live && checkIn && checkOut) {
-      return live[cabin.id] ? canStay([live[cabin.id]], checkIn, checkOut) : false;
-    }
-    return true;
-  });
+  const results = cabins
+    .filter((cabin) => {
+      if (selected && cabin.id !== selected.id) return false;
+      if (search.guests && cabin.guests < search.guests) return false;
+      if (live && checkIn && checkOut) {
+        return live[cabin.id] ? canStay([live[cabin.id]], checkIn, checkOut) : false;
+      }
+      return true;
+    })
+    .map((cabin) => cmsById.get(cabin.id) ?? cabin);
 
   const summary = [
     `${results.length} ${results.length === 1 ? "cabin" : "cabins"}`,
@@ -57,10 +67,14 @@ export default async function CabinsPage({ searchParams }: PageProps<"/cabins">)
   return (
     <>
       <PageHero
-        eyebrow="Our Cabins"
-        title="Find your cabin in the Smokies"
-        description="Three cabins, each cared for by their owners. Add your dates and group size to narrow things down."
-        image={photos.pineTopFall}
+        eyebrow={str(intro, "eyebrow", "Our Cabins")}
+        title={str(intro, "heading", "Find your cabin in the Smokies")}
+        description={str(
+          intro,
+          "description",
+          "Three cabins, each cared for by their owners. Add your dates and group size to narrow things down.",
+        )}
+        image={img(intro, "image", photos.pineTopFall)}
         imageAlt="Aerial view of Pine Top Vista surrounded by autumn color"
       />
 
@@ -84,9 +98,13 @@ export default async function CabinsPage({ searchParams }: PageProps<"/cabins">)
         ) : (
           <div className="mx-auto mt-6 max-w-xl rounded-3xl bg-stone-50 p-10 text-center">
             <SearchX size={32} strokeWidth={1.5} className="mx-auto text-pine-600" />
-            <h2 className="mt-4 font-serif text-2xl text-bark-800">No cabins match that search</h2>
+            <h2 className="mt-4 font-serif text-2xl text-bark-800">{str(intro, "noResultsHeading", "No cabins match that search")}</h2>
             <p className="mt-2 text-sm text-bark-600">
-              Try different dates or a smaller group, or get in touch and we&rsquo;ll help you find a fit.
+              {str(
+                intro,
+                "noResultsDescription",
+                "Try different dates or a smaller group, or get in touch and we'll help you find a fit.",
+              )}
             </p>
             <div className="mt-6 flex flex-wrap justify-center gap-3">
               <Link

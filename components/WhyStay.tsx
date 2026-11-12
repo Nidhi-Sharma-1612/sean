@@ -7,8 +7,10 @@ import { ArrowUpRight, Baby, BedDouble, Droplets, Gamepad2, Users, Waves, type L
 import { useState } from "react";
 import Reveal from "@/components/Reveal";
 import { cabins } from "@/lib/data/cabins";
-import { LISTING_ROOT } from "@/lib/photos";
 import { cabinUrl } from "@/lib/search";
+import { DEFAULT_FEATURES, type FeatureContent } from "@/lib/home-content";
+
+export type { FeatureContent };
 
 interface Feature {
   icon: LucideIcon;
@@ -19,61 +21,24 @@ interface Feature {
   cabins: string[];
 }
 
-const features: Feature[] = [
-  {
-    icon: Droplets,
-    title: "Private Hot Tubs",
-    description:
-      "Every cabin has its own hot tub, ready for the end of a long day on the trails.",
-    image: `${LISTING_ROOT}/695bbc5b3fe47f0015b6ba42/5682f2cd-f408-40--EMgD`,
-    imageAlt: "Hot tub on a covered deck among the trees at Bluff Ridge Haven",
-    cabins: ["Bluff Ridge Haven", "Pine Top Vista", "Cabana on Osprey"],
-  },
-  {
-    icon: Waves,
-    title: "Indoor Pools",
-    description:
-      "Heated pool rooms with mural walls, so the weather never decides your day.",
-    image: `${LISTING_ROOT}/695bbc5b3fe47f0015b6ba42/3a8817e9-69d2-40-0P8Dv`,
-    imageAlt: "Heated indoor pool room with a Smoky Mountain mural at Bluff Ridge Haven",
-    cabins: ["Bluff Ridge Haven", "Cabana on Osprey"],
-  },
-  {
-    icon: BedDouble,
-    title: "Bunk Rooms Kids Love",
-    description:
-      "Climbing walls, a fireman's pole, slides, swings and triple bunks, depending on the cabin.",
-    image: `${LISTING_ROOT}/695bbc5b714f2f00148920c2/b52d4531-73fa-4a-1sIFB`,
-    imageAlt: "Kids' bunk room with a slide and hanging swings at Cabana on Osprey",
-    cabins: ["Bluff Ridge Haven", "Pine Top Vista", "Cabana on Osprey"],
-  },
-  {
-    icon: Gamepad2,
-    title: "Game Rooms",
-    description:
-      "Pool, air hockey and shuffleboard at Pine Top Vista. Pac-Man, pinball and foosball at Bluff Ridge Haven.",
-    image: `${LISTING_ROOT}/695bbc5ba87237001523e3c4/703b7232-77b9-47-6hh8T`,
-    imageAlt: "Game room with a pool table and wood ceilings at Pine Top Vista",
-    cabins: ["Bluff Ridge Haven", "Pine Top Vista"],
-  },
-  {
-    icon: Users,
-    title: "Room for Everyone",
-    description:
-      "Four to five bedrooms and space for 10 to 12 guests, so the whole group can stay together.",
-    image: `${LISTING_ROOT}/695bbc5b3fe47f0015b6ba42/67f7f5b1-2c2b-41-MIzdz`,
-    imageAlt: "Long dining table in the open-plan main room at Bluff Ridge Haven",
-    cabins: ["Bluff Ridge Haven", "Pine Top Vista", "Cabana on Osprey"],
-  },
-  {
-    icon: Baby,
-    title: "Ready for Little Ones",
-    description:
-      "High chairs, travel cribs and stair gates at all three cabins, so there's less to pack.",
-    image: `${LISTING_ROOT}/695bbc5b714f2f00148920c2/29542d7b-268e-45-r3Gd7`,
-    imageAlt: "Family dining table set for a meal at Cabana on Osprey",
-    cabins: ["Bluff Ridge Haven", "Pine Top Vista", "Cabana on Osprey"],
-  },
+// Icons, alt text and cabin tags are fixed in code; title/description/image
+// are admin-editable (same order as below).
+const ICONS: LucideIcon[] = [Droplets, Waves, BedDouble, Gamepad2, Users, Baby];
+const IMAGE_ALTS = [
+  "Hot tub on a covered deck among the trees at Bluff Ridge Haven",
+  "Heated indoor pool room with a Smoky Mountain mural at Bluff Ridge Haven",
+  "Kids' bunk room with a slide and hanging swings at Cabana on Osprey",
+  "Game room with a pool table and wood ceilings at Pine Top Vista",
+  "Long dining table in the open-plan main room at Bluff Ridge Haven",
+  "Family dining table set for a meal at Cabana on Osprey",
+];
+const CABIN_TAGS = [
+  ["Bluff Ridge Haven", "Pine Top Vista", "Cabana on Osprey"],
+  ["Bluff Ridge Haven", "Cabana on Osprey"],
+  ["Bluff Ridge Haven", "Pine Top Vista", "Cabana on Osprey"],
+  ["Bluff Ridge Haven", "Pine Top Vista"],
+  ["Bluff Ridge Haven", "Pine Top Vista", "Cabana on Osprey"],
+  ["Bluff Ridge Haven", "Pine Top Vista", "Cabana on Osprey"],
 ];
 
 function CabinLinks({ feature }: { feature: Feature }) {
@@ -98,8 +63,25 @@ function CabinLinks({ feature }: { feature: Feature }) {
   );
 }
 
-export default function WhyStay() {
+export default function WhyStay({
+  eyebrow = "Why GSM",
+  heading = "Everything your crew needs under one roof",
+  description = "Plan a day out in the mountains, or don't. These cabins are built for rainy days and lazy mornings too.",
+  featureContent = DEFAULT_FEATURES,
+}: {
+  eyebrow?: string;
+  heading?: string;
+  description?: string;
+  featureContent?: FeatureContent[];
+}) {
   const [active, setActive] = useState(0);
+  const content = featureContent.length === DEFAULT_FEATURES.length ? featureContent : DEFAULT_FEATURES;
+  const features: Feature[] = content.map((c, i) => ({
+    ...c,
+    icon: ICONS[i],
+    imageAlt: IMAGE_ALTS[i],
+    cabins: CABIN_TAGS[i],
+  }));
   const current = features[active];
 
   // On phones the photo above closes as this one opens, so keep the tapped feature on screen.
@@ -113,14 +95,9 @@ export default function WhyStay() {
     <section id="why" className="bg-forest-800 py-24 text-white">
       <div className="mx-auto max-w-7xl px-6">
         <Reveal className="max-w-2xl">
-          <p className="font-serif text-base italic text-caramel-300">Why GSM</p>
-          <h2 className="mt-2 text-balance font-serif text-3xl sm:text-4xl">
-            Everything your crew needs under one roof
-          </h2>
-          <p className="mt-4 text-base text-white/80">
-            Plan a day out in the mountains, or don&rsquo;t. These cabins are built for rainy days
-            and lazy mornings too.
-          </p>
+          <p className="font-serif text-base italic text-caramel-300">{eyebrow}</p>
+          <h2 className="mt-2 text-balance font-serif text-3xl sm:text-4xl">{heading}</h2>
+          <p className="mt-4 text-base text-white/80">{description}</p>
         </Reveal>
 
         <Reveal className="mt-12 grid gap-10 lg:grid-cols-[5fr_7fr] lg:items-stretch">

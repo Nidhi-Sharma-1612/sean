@@ -8,24 +8,18 @@ import CabinCard, { formatRating } from "@/components/CabinCard";
 import CabinPhotos from "@/components/CabinPhotos";
 import ExpandableText from "@/components/ExpandableText";
 import MobileBookBar from "@/components/MobileBookBar";
-import details from "@/lib/data/cabin-details.json";
-import { cabins, findCabin } from "@/lib/data/cabins";
+import { cabins } from "@/lib/data/cabins";
 import { nearbyPlaces } from "@/lib/data/nearby";
 import { parseSearch } from "@/lib/search";
-
-type DetailSlug = keyof typeof details;
-
-interface RuleLine {
-  level: number;
-  text: string;
-}
+import { getCmsCabin, getCmsCabins, type RuleLine } from "@/lib/cabin-cms";
+import { getPageSections, str } from "@/lib/cms";
 
 export function generateStaticParams() {
   return cabins.map((cabin) => ({ slug: cabin.slug }));
 }
 
 export async function generateMetadata({ params }: PageProps<"/cabins/[slug]">): Promise<Metadata> {
-  const cabin = findCabin((await params).slug);
+  const cabin = await getCmsCabin((await params).slug);
   if (!cabin) return {};
 
   return {
@@ -75,12 +69,15 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 
 export default async function CabinPage({ params, searchParams }: PageProps<"/cabins/[slug]">) {
   const { slug } = await params;
-  const cabin = findCabin(slug);
+  const cabin = await getCmsCabin(slug);
   if (!cabin) notFound();
 
   const search = parseSearch(await searchParams);
-  const detail = details[slug as DetailSlug];
-  const others = cabins.filter((item) => item.id !== cabin.id);
+  const detail = cabin.details;
+  const [allCms, global] = await Promise.all([getCmsCabins(), getPageSections("global")]);
+  const others = allCms.filter((item) => item.id !== cabin.id);
+  const labels = global.cabinPageLabels ?? {};
+  const bookingAgeValue = str(labels, "bookingAgeValue", "25 or older");
 
   const facts = [
     { icon: Users, label: `Sleeps ${cabin.guests}` },
@@ -92,7 +89,7 @@ export default async function CabinPage({ params, searchParams }: PageProps<"/ca
   const essentials: { icon: LucideIcon; label: string; value: string }[] = [
     { icon: Clock, label: "Check-in", value: `After ${formatTime(detail.checkIn)}` },
     { icon: Clock, label: "Check-out", value: `Before ${formatTime(detail.checkOut)}` },
-    { icon: UserCheck, label: "Booking age", value: "25 or older" },
+    { icon: UserCheck, label: str(labels, "bookingAgeLabel", "Booking age"), value: bookingAgeValue },
     { icon: PawPrint, label: "Pets", value: detail.policies.pets ? "Allowed" : "Not allowed" },
     { icon: Ban, label: "Smoking", value: detail.policies.smoking ? "Allowed" : "Not allowed" },
     { icon: PartyPopper, label: "Events", value: detail.policies.events ? "Allowed" : "Not allowed" },
@@ -141,15 +138,15 @@ export default async function CabinPage({ params, searchParams }: PageProps<"/ca
             </div>
 
             <div className="mt-10">
-              <Section title="About this cabin">
+              <Section title={str(labels, "aboutHeading", "About this cabin")}>
                 <ExpandableText paragraphs={detail.about} />
               </Section>
 
-              <Section title="Amenities">
+              <Section title={str(labels, "amenitiesHeading", "Amenities")}>
                 <AmenitiesList amenities={detail.amenities} />
               </Section>
 
-              <Section title="What's nearby">
+              <Section title={str(labels, "nearbyHeading", "What's nearby")}>
                 <ul className="divide-y divide-stone-200">
                   {nearbyPlaces[cabin.id].map((place) => (
                     <li key={place.name} className="flex items-center justify-between gap-4 py-3 text-sm">
@@ -160,14 +157,16 @@ export default async function CabinPage({ params, searchParams }: PageProps<"/ca
                 </ul>
                 {detail.gettingThere && (
                   <details className="group mt-4">
-                    <summary className="cursor-pointer text-sm font-semibold text-pine-600">Getting there</summary>
+                    <summary className="cursor-pointer text-sm font-semibold text-pine-600">
+                      {str(labels, "gettingThereLabel", "Getting there")}
+                    </summary>
                     <p className="mt-2 text-sm leading-relaxed text-bark-600">{detail.gettingThere}</p>
                     {detail.parking && <p className="mt-2 text-sm leading-relaxed text-bark-600">{detail.parking}</p>}
                   </details>
                 )}
               </Section>
 
-              <Section title="Good to know">
+              <Section title={str(labels, "goodToKnowHeading", "Good to know")}>
                 <ul className="grid grid-cols-2 gap-3 md:grid-cols-3">
                   {essentials.map((item) => (
                     <li key={item.label} className="rounded-2xl bg-stone-50 p-4">
@@ -180,14 +179,18 @@ export default async function CabinPage({ params, searchParams }: PageProps<"/ca
 
                 <div className="mt-5 divide-y divide-stone-200 rounded-2xl ring-1 ring-stone-200">
                   <details className="p-4">
-                    <summary className="cursor-pointer text-sm font-semibold text-bark-800">House rules &amp; rental agreement</summary>
+                    <summary className="cursor-pointer text-sm font-semibold text-bark-800">
+                      {str(labels, "houseRulesLabel", "House rules & rental agreement")}
+                    </summary>
                     <div className="mt-4">
                       <Rules lines={detail.rules.slice(detail.rules[0].text.startsWith("The cabin") ? 1 : 0)} />
                     </div>
                   </details>
                   {detail.notes.length > 0 && (
                     <details className="p-4">
-                      <summary className="cursor-pointer text-sm font-semibold text-bark-800">Notices from the owners</summary>
+                      <summary className="cursor-pointer text-sm font-semibold text-bark-800">
+                        {str(labels, "noticesLabel", "Notices from the owners")}
+                      </summary>
                       <div className="mt-3 space-y-3 text-sm leading-relaxed text-bark-600">
                         {detail.notes.map((note) => (
                           <p key={note}>{note}</p>
@@ -208,7 +211,7 @@ export default async function CabinPage({ params, searchParams }: PageProps<"/ca
         </div>
 
         <section className="border-t border-stone-200 py-12">
-          <h2 className="font-serif text-2xl text-bark-800 sm:text-3xl">More cabins you might like</h2>
+          <h2 className="font-serif text-2xl text-bark-800 sm:text-3xl">{str(labels, "relatedHeading", "More cabins you might like")}</h2>
           <div className="mx-auto mt-6 grid max-w-xl gap-6 lg:max-w-none lg:grid-cols-2">
             {others.map((other) => (
               <CabinCard key={other.id} cabin={other} search={{ ...search, cabin: undefined }} />

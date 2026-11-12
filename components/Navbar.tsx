@@ -8,7 +8,13 @@ import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { navLinks, site } from "@/lib/site";
 
-export default function Navbar() {
+export default function Navbar({
+  logo = "/images/logo.jpg",
+  bookLabel = "Book Now",
+}: {
+  logo?: string;
+  bookLabel?: string;
+}) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -42,7 +48,7 @@ export default function Navbar() {
         <Link href="/" aria-label={`${site.name} home`} onClick={() => setOpen(false)}>
           {/* The logo artwork has a white background, so it sits on a white tile over the hero. */}
           <Image
-            src="/images/logo.jpg"
+            src={logo}
             alt=""
             width={327}
             height={324}
@@ -76,7 +82,7 @@ export default function Navbar() {
             href="/cabins"
             className="inline-flex items-center rounded-full bg-pine-600 px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-forest-800"
           >
-            Book Now
+            {bookLabel}
           </Link>
         </div>
 
@@ -117,7 +123,7 @@ export default function Navbar() {
                 className="inline-flex items-center justify-center rounded-full bg-pine-600 px-6 py-3 text-sm font-semibold text-white"
                 onClick={() => setOpen(false)}
               >
-                Book Now
+                {bookLabel}
               </Link>
             </div>
           </motion.nav>

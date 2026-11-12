@@ -15,15 +15,21 @@ const icons: Record<NearbyKind, LucideIcon> = {
   town: MapPin,
 };
 
-export default function NearbyPlanner() {
+export default function NearbyPlanner({
+  heading = "How close is everything?",
+  description = "Pick a cabin to see what's nearby.",
+}: {
+  heading?: string;
+  description?: string;
+}) {
   const [cabinId, setCabinId] = useState(cabins[0].id);
   const cabin = cabins.find((item) => item.id === cabinId) ?? cabins[0];
 
   return (
     <div className="grid overflow-hidden rounded-3xl bg-white shadow-sm ring-1 ring-bark-800/5 lg:grid-cols-[2fr_3fr]">
       <div className="bg-forest-800 p-6 text-white sm:p-8">
-        <h3 className="font-serif text-2xl">How close is everything?</h3>
-        <p className="mt-2 text-sm text-white/80">Pick a cabin to see what&rsquo;s nearby.</p>
+        <h3 className="font-serif text-2xl">{heading}</h3>
+        <p className="mt-2 text-sm text-white/80">{description}</p>
 
         <div className="mt-6 flex flex-col gap-2" role="group" aria-label="Choose a cabin">
           {cabins.map((item) => {

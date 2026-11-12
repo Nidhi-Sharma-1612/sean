@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { CheckCircle2 } from "lucide-react";
 import { useState, type FormEvent } from "react";
-import { cabins } from "@/lib/data/cabins";
+import { cabins as defaultCabins, type Cabin } from "@/lib/data/cabins";
 import { site } from "@/lib/site";
 
 const inputClass =
@@ -11,10 +11,12 @@ const inputClass =
 const labelClass = "text-sm font-medium text-bark-800";
 
 export default function ContactForm({
+  cabins = defaultCabins,
   cabin = "",
   dates = "",
   guests = "",
 }: {
+  cabins?: Cabin[];
   cabin?: string;
   dates?: string;
   guests?: string;

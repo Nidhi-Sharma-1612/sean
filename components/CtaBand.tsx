@@ -5,14 +5,32 @@ import Reveal from "@/components/Reveal";
 import { averageRating, totalReviews } from "@/lib/data/cabins";
 import { photos } from "@/lib/photos";
 
-export default function CtaBand() {
+export default function CtaBand({
+  eyebrow = "Start Planning",
+  heading = "Your cabin in the Smokies is waiting",
+  description = "Pick your dates and book, or send us a note and we'll help you find the right cabin for your group.",
+  image = photos.pineTopSunset,
+  primaryLabel = "Check Availability",
+  secondaryLabel = "Contact Us",
+  priceNote = "Rates vary by date",
+  priceDetail = "See your exact total before you pay",
+}: {
+  eyebrow?: string;
+  heading?: string;
+  description?: string;
+  image?: string;
+  primaryLabel?: string;
+  secondaryLabel?: string;
+  priceNote?: string;
+  priceDetail?: string;
+}) {
   return (
     <section
       id="contact"
       className="relative isolate flex min-h-[44rem] items-center overflow-hidden pb-32 pt-24 lg:min-h-[46rem]"
     >
       <Image
-        src={photos.pineTopSunset}
+        src={image}
         alt="Sun setting behind the Smoky Mountains seen from Pine Top Vista"
         fill
         sizes="100vw"
@@ -25,21 +43,18 @@ export default function CtaBand() {
 
       <Reveal className="mx-auto w-full max-w-7xl px-6 text-white">
         <div className="max-w-xl">
-          <p className="font-serif text-lg italic text-caramel-300">Start Planning</p>
+          <p className="font-serif text-lg italic text-caramel-300">{eyebrow}</p>
           <h2 className="mt-2 text-balance font-serif text-4xl leading-[1.1] sm:text-5xl lg:text-6xl">
-            Your cabin in the Smokies is waiting
+            {heading}
           </h2>
-          <p className="mt-5 text-lg leading-relaxed text-white/90">
-            Pick your dates and book, or send us a note and we&rsquo;ll help you find the right cabin
-            for your group.
-          </p>
+          <p className="mt-5 text-lg leading-relaxed text-white/90">{description}</p>
 
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
               href="/cabins"
               className="group inline-flex items-center justify-center gap-2 rounded-full bg-caramel-300 px-8 py-4 text-sm font-semibold text-bark-800 transition-colors hover:bg-white"
             >
-              Check Availability
+              {primaryLabel}
               <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
             </Link>
             <Link
@@ -47,7 +62,7 @@ export default function CtaBand() {
               className="inline-flex items-center justify-center gap-2 rounded-full border border-white/60 px-8 py-4 text-sm font-semibold text-white transition-colors hover:bg-white/10"
             >
               <Mail size={16} />
-              Contact Us
+              {secondaryLabel}
             </Link>
           </div>
 
@@ -60,8 +75,8 @@ export default function CtaBand() {
               </dd>
             </div>
             <div className="flex flex-col-reverse">
-              <dt className="text-xs text-white/80">See your exact total before you pay</dt>
-              <dd className="font-serif text-2xl">Rates vary by date</dd>
+              <dt className="text-xs text-white/80">{priceDetail}</dt>
+              <dd className="font-serif text-2xl">{priceNote}</dd>
             </div>
           </dl>
         </div>
